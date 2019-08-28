@@ -89,16 +89,8 @@
 
     <div class="product-screens">
 
-      <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
-        <img src="<?php echo base_url(''); ?>/vendor2/img/product-screen-1.png" alt="">
-      </div>
-
       <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
         <img src="<?php echo base_url(''); ?>/vendor2/img/product-screen-2.png" alt="">
-      </div>
-
-      <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
-        <img src="<?php echo base_url(''); ?>/vendor2/img/product-screen-3.png" alt="">
       </div>
 
     </div>
@@ -123,7 +115,7 @@
 
         <div class="row">
           <div class="col-lg-6 about-img wow fadeInLeft">
-            <img src="<?php echo base_url(''); ?>/vendor2/img/about-img.jpg" alt="">
+            <img src="<?php echo base_url(''); ?>/vendor2/img/gambiran.jpg" alt="">
           </div>
 
           <div class="col-lg-6 content wow fadeInRight">
@@ -429,7 +421,7 @@
             <div class="member">
               <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/team/team-1.jpg" alt=""></div>
               <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
+              <span>Kepala Desa</span>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
                 <a href=""><i class="fa fa-facebook"></i></a>
@@ -443,7 +435,7 @@
             <div class="member">
               <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/team/team-2.jpg" alt=""></div>
               <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
+              <span>Sekretaris Desa</span>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
                 <a href=""><i class="fa fa-facebook"></i></a>
@@ -457,7 +449,7 @@
             <div class="member">
               <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/team/team-3.jpg" alt=""></div>
               <h4>William Anderson</h4>
-              <span>CTO</span>
+              <span>KASI PEMERINTAHAN</span>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
                 <a href=""><i class="fa fa-facebook"></i></a>
@@ -471,7 +463,7 @@
             <div class="member">
               <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/team/team-4.jpg" alt=""></div>
               <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
+              <span>KAUR KEUANGAN</span>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
                 <a href=""><i class="fa fa-facebook"></i></a>
@@ -481,6 +473,20 @@
             </div>
           </div>
         </div>
+        
+        <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/team/team-1.jpg" alt=""></div>
+              <h4>Walter White</h4>
+              <span>Kepala Desa</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
 
       </div>
     </section><!-- #team -->
@@ -500,48 +506,48 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-1.jpg" class="gallery-popup">
-                <img src="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-1.jpg" alt="">
+              <a href="<?php echo base_url(''); ?>/vendor2/img/gam1.jpg" class="gallery-popup">
+                <img src="<?php echo base_url(''); ?>/vendor2/img/gam1.jpg" alt="">
               </a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-2.jpg" class="gallery-popup">
-                <img src="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-2.jpg" alt="">
+              <a href="<?php echo base_url(''); ?>/vendor2/img/gam2.jpg" class="gallery-popup">
+                <img src="<?php echo base_url(''); ?>/vendor2/img/gam2.jpg" alt="">
               </a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-3.jpg" class="gallery-popup">
-                <img src="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-3.jpg" alt="">
+              <a href="<?php echo base_url(''); ?>/vendor2/img/gam3.jpg" class="gallery-popup">
+                <img src="<?php echo base_url(''); ?>/vendor2/img/gam3.jpg" alt="">
               </a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-4.jpg" class="gallery-popup">
-                <img src="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-4.jpg" alt="">
+              <a href="<?php echo base_url(''); ?>/vendor2/img/gam4.jpg" class="gallery-popup">
+                <img src="<?php echo base_url(''); ?>/vendor2/img/gam4.jpg" alt="">
               </a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-5.jpg" class="gallery-popup">
-                <img src="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-5.jpg" alt="">
+              <a href="<?php echo base_url(''); ?>/vendor2/img/gam5.jpg" class="gallery-popup">
+                <img src="<?php echo base_url(''); ?>/vendor2/img/gam5.jpg" alt="">
               </a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-6.jpg" class="gallery-popup">
-                <img src="<?php echo base_url(''); ?>/vendor2/img/gallery/gallery-6.jpg" alt="">
+              <a href="<?php echo base_url(''); ?>/vendor2/img/gam6.jpg" class="gallery-popup">
+                <img src="<?php echo base_url(''); ?>/vendor2/img/gam6.jpg" alt="">
               </a>
             </div>
           </div>
