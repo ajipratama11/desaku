@@ -52,7 +52,7 @@
           <li class="menu-active"><a href="#intro">Beranda</a></li>
           <li><a href="#about">Tentang Kami</a></li>
           <li><a href="#features">Info APBD</a></li>
-          <li><a href="#pricing">Pengumuman</a></li>
+          <li><a href="#pricing">Inovasi Desa</a></li>
           <li class="menu-has-children"><a href="">Layanan</a>
             <ul>
               <li><a href="#">Pembuatan SKTM</a></li>
@@ -75,14 +75,14 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-
+ 
   <!--==========================
     Intro Section
   ============================-->
   <section id="intro">
 
     <div class="intro-text">
-      <h2>SELAMAT DATANG DI SIDESA</h2>
+      <h2>SELAMAT DATANG DI SI-DESAKU</h2>
       <p>Melayani Sepenuh Hati Untuk Kepentingan Bersama</p>
       <a href="#about" class="btn-get-started scrollto">Mulai</a>
     </div>
@@ -127,21 +127,20 @@
           </div>
 
           <div class="col-lg-6 content wow fadeInRight">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elite storium paralate</h2>
-            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+            <h2>Desa Yosomulyo, Kecamatan Gambiran, Banyuwangi</h2>
+            <h3>Yosomulyo adalah sebuah nama desa di wilayah Gambiran, Kabupaten Banyuwangi, Provinsi Jawa Timur, Indonesia..</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Dulu desa ini bernama Karangasem. Nama itu diberikan karena dulu banyak sekali pohon asam di sana. Desa ini pada zaman PKI Di anggap tempat basis PKI di Banyuwangi sehingga sangat ditakuti di seluruh Banyuwangi. Orang-orang Yosomulyo terkenal kesaktiannya. Hal itu terbukti saat orang Yosomulyo bentrok dengan orang ANSOR Muncar. Bentrokan ini bermula dari orang-orang NU dari Muncar yang merencanakan penyerangan di Yosomulyo untuk menumpas PKI. 
             </p>
-
+            <h5>Pembagian Wilayah</h5>
             <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i class="ion-android-checkmark-circle"></i>Dusun Krajan</li>
+              <li><i class="ion-android-checkmark-circle"></i>Dusun Sidomukti</li>
+              <li><i class="ion-android-checkmark-circle"></i>Dusun Sidorejo Kulon.</li>
+              <li><i class="ion-android-checkmark-circle"></i>Dusun Sidorejo Wetan.</li>
+              <li><i class="ion-android-checkmark-circle"></i>Dusun Sidotentrem.</li>
             </ul>
 
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Libero justo laoreet sit amet cursus sit amet dictum sit. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec
-            </p>
           </div>
         </div>
 
@@ -173,23 +172,23 @@
 
               <div class="col-lg-6 col-md-6 box wow fadeInRight">
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident clarida perendo.</p>
+                <h4 class="title"><a href="">Rencana Strategis</a></h4>
+                <p class="description">Rencana strategis dilakukan untuk pengalokasian dana desa dan alokasi dana desa baik berdasarkan APBN dan APBD Daerah.</p>
               </div>
               <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
                 <div class="icon"><i class="ion-ios-flask-outline"></i></div>
-                <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata noble dynala mark.</p>
+                <h4 class="title"><a href="">Alokasi Dasar (AD)</a></h4>
+                <p class="description">Sebesar 77% dari pagu atau sebesar Rp46.200,00 miliar, dibagi secara merata kepada setiap desa.</p>
               </div>
               <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
                 <div class="icon"><i class="ion-social-buffer-outline"></i></div>
-                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur teleca starter sinode park ledo.</p>
+                <h4 class="title"><a href="">Alokasi Afirmasi (AA)</a></h4>
+                <p class="description">Sebesar 3% dari pagu atau Rp1.800,00 miliar, dibagi secara proporsional kepada desa tertinggal dan desa sangat tertinggal yang mempunyai jumlah penduduk miskin (JPM) tinggi.</p>
               </div>
               <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
                 <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                <h4 class="title"><a href="">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum dinoun trade capsule.</p>
+                <h4 class="title"><a href="">Alokasi Formula (AF)</a></h4>
+                <p class="description"> Sebesar 20% dari pagu atau Rp12.000,00 miliar, dibagi berdasarkan: 	jumlah penduduk desa bobot 10%, jumlah penduduk miskin bobot 50%, luas wilayah desa bobot 15%, dan Indeks Kemahalan Konstruksi atau Indeks Kesulitan Geografis .</p>
               </div>
             </div>
 
@@ -205,23 +204,6 @@
       Product Advanced Featuress Section
     ============================-->
     <section id="advanced-features">
-
-      <div class="features-row section-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <img class="advanced-feature-img-right wow fadeInRight" src="img/advanced-feature-1.jpg" alt="">
-              <div class="wow fadeInLeft">
-                <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
-                <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="features-row">
         <div class="container">
           <div class="row">
@@ -430,74 +412,7 @@
     <!--==========================
       Frequently Asked Questions Section
     ============================-->
-    <section id="faq">
-      <div class="container">
 
-        <div class="section-header">
-          <h3 class="section-title">Frequently Asked Questions</h3>
-          <span class="section-divider"></span>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
-
-        <ul id="faq-list" class="wow fadeInUp">
-          <li>
-            <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="ion-android-remove"></i></a>
-            <div id="faq1" class="collapse" data-parent="#faq-list">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="ion-android-remove"></i></a>
-            <div id="faq2" class="collapse" data-parent="#faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="ion-android-remove"></i></a>
-            <div id="faq3" class="collapse" data-parent="#faq-list">
-              <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="ion-android-remove"></i></a>
-            <div id="faq4" class="collapse" data-parent="#faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="ion-android-remove"></i></a>
-            <div id="faq5" class="collapse" data-parent="#faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="ion-android-remove"></i></a>
-            <div id="faq6" class="collapse" data-parent="#faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section><!-- #faq -->
 
     <!--==========================
       Our Team Section
@@ -505,9 +420,9 @@
     <section id="team" class="section-bg">
       <div class="container">
         <div class="section-header">
-          <h3 class="section-title">Our Team</h3>
+          <h3 class="section-title">Perangkat Desa</h3>
           <span class="section-divider"></span>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Struktur Pemerintahan Desa Yosomulyo</p>
         </div>
         <div class="row wow fadeInUp">
           <div class="col-lg-3 col-md-6">
@@ -576,9 +491,9 @@
     <section id="gallery">
       <div class="container-fluid">
         <div class="section-header">
-          <h3 class="section-title">Gallery</h3>
+          <h3 class="section-title">Galeri</h3>
           <span class="section-divider"></span>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Dokumentasi Kegiatan</p>
         </div>
 
         <div class="row no-gutters">
@@ -645,8 +560,8 @@
 
           <div class="col-lg-4 col-md-4">
             <div class="contact-about">
-              <h3>Avilon</h3>
-              <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+              <h3>Yosomulyo, Gambiran Banyuwangi</h3>
+              <p>Informasi dan Kontak.</p>
               <div class="social-links">
                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -661,17 +576,17 @@
             <div class="info">
               <div>
                 <i class="ion-ios-location-outline"></i>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
+                <p>Yosomulyo, Kec. Gambiran, Kab. Banyuwangi<br>Jawa Timur, 68486</p>
               </div>
 
               <div>
                 <i class="ion-ios-email-outline"></i>
-                <p>info@example.com</p>
+                <p>Si_Desagambiran@gmail.go.id</p>
               </div>
 
               <div>
                 <i class="ion-ios-telephone-outline"></i>
-                <p>+1 5589 55488 55s</p>
+                <p>+0331 55 55488 86</p>
               </div>
 
             </div>
@@ -720,24 +635,14 @@
       <div class="row">
         <div class="col-lg-6 text-lg-left text-center">
           <div class="copyright">
-            &copy; Copyright <strong>Avilon</strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Avilon
-            -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Copyright  &copy; 2019<strong>WebDesa</strong>. Kabupaten Banyuwangi
+          </div
+          
           </div>
         </div>
         <div class="col-lg-6">
-          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#intro" class="scrollto">Home</a>
-            <a href="#about" class="scrollto">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
+          <nav class="footer-links text-lg-right">
+          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
           </nav>
         </div>
       </div>
