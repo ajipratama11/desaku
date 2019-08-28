@@ -41,39 +41,36 @@
   ============================-->
   <header id="header">
     <div class="container">
-
       <div id="logo" class="pull-left">
         <h1><a href="#intro" class="scrollto">SI-DESAKU</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
       </div>
-
       <nav id="nav-menu-container">
+      
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
+          <li class="menu-active"><a href="#intro">Beranda</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#features">Info APBD</a></li>
+          <li><a href="#pricing">Pengumuman</a></li>
+          <li class="menu-has-children"><a href="">Layanan</a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="menu-has-children"><a href="#">Drop Down 2</a>
+              <li><a href="#">Pembuatan SKTM</a></li>
+              <li class="menu-has-children"><a href="#">Surat Rekom</a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a href="#">Surat Domisili</a></li>
+                  <li><a href="#">Surat Pengantar Pindah</a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
+              <li><a href="#">Pembuatan KTP</a></li>
+              <li><a href="#">Pembuatan KK</a></li>
+              <li><a href="#">Pembuatan AKTA LAHIR</a></li>
+              <li><a href="#"></a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#team">Perangkat Desa</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+          <li><a href="#contact">Kontak</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -85,9 +82,9 @@
   <section id="intro">
 
     <div class="intro-text">
-      <h2>Welcome to Avilon</h2>
-      <p>We are team of talanted designers making websites with Bootstrap</p>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      <h2>SELAMAT DATANG DI SIDESA</h2>
+      <p>Melayani Sepenuh Hati Untuk Kepentingan Bersama</p>
+      <a href="#about" class="btn-get-started scrollto">Mulai</a>
     </div>
 
     <div class="product-screens">
@@ -116,11 +113,11 @@
     <section id="about" class="section-bg">
       <div class="container-fluid">
         <div class="section-header">
-          <h3 class="section-title">About Us</h3>
+          <h3 class="section-title">Tentang Kami</h3>
           <span class="section-divider"></span>
           <p class="section-description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br>
-            sunt in culpa qui officia deserunt mollit anim id est laborum
+            Sistem Informasi Layanan Desa<br>
+            Memberikan Pelayanan Yang Responsif, Tepat, dan Transparan untuk Kepentingan Mayarakat
           </p>
         </div>
 
@@ -161,7 +158,7 @@
 
           <div class="col-lg-8 offset-lg-4">
             <div class="section-header wow fadeIn" data-wow-duration="1s">
-              <h3 class="section-title">Product Featuress</h3>
+              <h3 class="section-title">Alokasi APBD Desa</h3>
               <span class="section-divider"></span>
             </div>
           </div>
