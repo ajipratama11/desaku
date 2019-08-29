@@ -411,9 +411,7 @@
               <li><i class="ion-android-checkmark-circle"></i>Dusun Sidorejo Wetan.</li>
               <li><i class="ion-android-checkmark-circle"></i>Dusun Sidotentrem.</li>
             </ul>
-            <!-- <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" href="#">Selengkapnya</a>
-            </div> -->
+
 
           </div>
         </div>
