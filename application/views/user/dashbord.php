@@ -74,6 +74,7 @@
           <li><a href="#team">Perangkat Desa</a></li>
           <li><a href="#gallery">Galeri</a></li>
           <li><a href="#contact">Kontak</a></li>
+          <li><a href="<?= base_url('Auth') ?>" class="btn btn-default btn-rounded mb-4" >Login</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
