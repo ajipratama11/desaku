@@ -56,7 +56,6 @@
           <li><a href="#pricing">Inovasi Desa</a></li>
           <li class="menu-has-children"><a href="">Layanan</a>
             <ul>
-              <li><a href="" data-toggle="modal" data-target="#modalsktmForm">Pembuatan SKTM</a></li>
               <li class="menu-has-children"><a href="">Surat Rekom</a>
                 <ul>
                   <li><a href="" data-toggle="modal" data-target="#modaldomisiliForm">Surat Domisili</a></li>
@@ -65,6 +64,7 @@
                   <li><a href="" data-toggle="modal" data-target="#modalpengantarceraiForm">Surat Pengantar Cerai</a></li>
                 </ul>
               </li>
+              <li><a href="" data-toggle="modal" data-target="#modalsktmForm">Pembuatan SKTM</a></li>
               <li><a href="" data-toggle="modal" data-target="#modalktpForm">Pembuatan KTP</a></li>
               <li><a href="" data-toggle="modal" data-target="#modalkkForm">Pembuatan KK</a></li>
               <li><a href="" data-toggle="modal" data-target="#modalaktaForm">Pembuatan AKTA LAHIR</a></li>
@@ -88,8 +88,8 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Surat Keterangan Tidak Mampu/h4>
-        <button type="button" class="close" data-dismiss="modalsktm" aria-label="Close">
+        <h4 class="modal-title w-100 font-weight-bold">Surat Keterangan Tidak Mampu</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -389,11 +389,14 @@
 
     <div class="product-screens">
 
-      <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-        <img src="<?php echo base_url(''); ?>/vendor2/img/jatim.png" width="200px" alt="">
+      <div class="product-screen-1.5 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+        <img src="<?php echo base_url(''); ?>/vendor2/img/kayu.png" width="500px" alt="">
       </div>
       <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-        <img src="<?php echo base_url(''); ?>/vendor2/img/logobwi.jpg" width="200px" alt="">
+        <img src="<?php echo base_url(''); ?>/vendor2/img/jatim.png" width="119px" alt="">
+      </div>
+      <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+        <img src="<?php echo base_url(''); ?>/vendor2/img/bwi.png" width="90px" alt="">
       </div>
 
     </div>
@@ -506,7 +509,7 @@
             <div class="col-12">
               <img class="advanced-feature-img-left" src="img/advanced-feature-2.jpg" alt="">
               <div class="wow fadeInRight">
-                <h2>Kebijakan pengalokasian Dana Desa dilakukan dengan menyempurnakan formula pengalokasian Dana Desa:</h2>
+                <h2>Kebijakan Dana Desa dilakukan dengan menyempurnakan formula pengalokasian Dana Desa:</h2>
                 <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-dlay="0.5s"></i>
                 <p class="wow fadeInRight" data-wow-delay="0.5s"> penyesuaian proporsi dana yang dibagi rata (Alokasi Dasar) dan dana yang dibagi berdasarkan formula (Alokasi Formula).</p>
                 <i class="ion-ios-color-filter-outline" wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s"></i>
@@ -870,12 +873,12 @@
             <div class="info">
               <div>
                 <i class="ion-ios-location-outline"></i>
-                <p>Yosomulyo, Kec. Gambiran, Kab. Banyuwangi<br>Jawa Timur, 68486</p>
+                <p>Yosomulyo, Kec. Gambiran, Kabupaten Banyuwangi<br>Jawa Timur, 68486</p>
               </div>
 
               <div>
                 <i class="ion-ios-email-outline"></i>
-                <p>Si_Desagambiran@gmail.go.id</p>
+                <p>Si_Desagambiran@bwikab.go.id</p>
               </div>
 
               <div>
