@@ -728,7 +728,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur4.jpg" alt=""></div>
+              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur4.jpeg" alt=""></div>
               <h4>Amanda Jepson</h4>
               <span>KAUR KEUANGAN</span>
               <div class="social">
@@ -773,8 +773,8 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="<?php echo base_url(''); ?>/vendor2/img/gam7.jpg" class="gallery-popup">
-                <img src="<?php echo base_url(''); ?>/vendor2/img/gam7.jpg" alt="">
+              <a href="<?php echo base_url(''); ?>/vendor2/img/gam7.jpeg" class="gallery-popup">
+                <img src="<?php echo base_url(''); ?>/vendor2/img/gam7.jpeg" alt="">
               </a>
             </div>
           </div>
