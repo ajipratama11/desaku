@@ -21,11 +21,11 @@ class Auth extends CI_Controller
             $this->load->view('templates/auth_footer');
         } else {
             //validasi berhasil
-            // $this->_login();
+            $this->_login();
         }
     }
 
-    public function login()
+    private function _login()
     {
         $email = $this->input->post('email');
         $password = $this->input->post('password');
