@@ -19,7 +19,7 @@
                     <h1 class="h4 text-gray-900 mb-4"><i class="fas fa-code"></i>  LOGIN </h1>
                   </div>
 
-                  <form class="user" method="post" action="<?= base_url('Auth/login'); ?>">
+                  <form class="user" method="post" action="<?= base_url('Auth/index'); ?>">
                     <div class="form-group">
                       <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Enter Email Address...">
                     </div>
@@ -36,10 +36,10 @@
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="<?= base_url('auth/forgotPassword'); ?>">Forgot Password?</a>
+                    <a class="small" href="">Forgot Password?</a>
                   </div>
                   <div class="text-center">
-                    <a class="small" href="<?= base_url('auth/registration'); ?>">Create an Account!</a>
+                    <a class="small" href="">Create an Account!</a>
                   </div>
                 </div>
               </div>
