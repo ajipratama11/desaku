@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>SI - DESAKU</title>
@@ -47,7 +48,7 @@
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
       </div>
       <nav id="nav-menu-container">
-      
+
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Beranda</a></li>
           <li><a href="#about">Tentang Kami</a></li>
@@ -55,31 +56,305 @@
           <li><a href="#pricing">Inovasi Desa</a></li>
           <li class="menu-has-children"><a href="">Layanan</a>
             <ul>
-              <li><a href="#">Pembuatan SKTM</a></li>
-              <li class="menu-has-children"><a href="#">Surat Rekom</a>
+              <li><a href="" data-toggle="modal" data-target="#modalsktmForm">Pembuatan SKTM</a></li>
+              <li class="menu-has-children"><a href="">Surat Rekom</a>
                 <ul>
-                  <li><a href="#">Surat Domisili</a></li>
-                  <li><a href="#">Surat Pengantar Pindah</a></li>
-                  <li><a href="#">Surat Pengantar Nikah</a></li>
-                  <li><a href="#">Surat Pengantar Cerai</a></li>
+                  <li><a href="" data-toggle="modal" data-target="#modaldomisiliForm">Surat Domisili</a></li>
+                  <li><a href="" data-toggle="modal" data-target="#modalpengantarpindahForm">Surat Pengantar Pindah</a></li>
+                  <li><a href="" data-toggle="modal" data-target="#modalpengantarnikahForm">Surat Pengantar Nikah</a></li>
+                  <li><a href="" data-toggle="modal" data-target="#modalpengantarceraiForm">Surat Pengantar Cerai</a></li>
                 </ul>
               </li>
-              <li><a href="#">Pembuatan KTP</a></li>
-              <li><a href="#">Pembuatan KK</a></li>
-              <li><a href="#">Pembuatan AKTA LAHIR</a></li>
-              <li><a href="#">Pembuatan Surat Tanah</a></li>
+              <li><a href="" data-toggle="modal" data-target="#modalktpForm">Pembuatan KTP</a></li>
+              <li><a href="" data-toggle="modal" data-target="#modalkkForm">Pembuatan KK</a></li>
+              <li><a href="" data-toggle="modal" data-target="#modalaktaForm">Pembuatan AKTA LAHIR</a></li>
+              <li><a href="" data-toggle="modal" data-target="#modalsurattanahForm">Pembuatan Surat Tanah</a></li>
               <li><a href="#"></a></li>
             </ul>
           </li>
-          <li><a href="#team">Perangkat Desa</a></li>
-          <li><a href="#gallery">Galeri</a></li>
-          <li><a href="#contact">Kontak</a></li>
-          <li><a href="<?= base_url('Auth') ?>" class="btn btn-default btn-rounded mb-4" >Login</a></li>
+          <li><a href="#">Perangkat Desa</a></li>
+          <li><a href="#">Galeri</a></li>
+          <li><a href="#">Kontak</a></li>
+          <li><a href="<?= base_url('Auth') ?>" class="btn btn-default btn-rounded mb-4">Login</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
- 
+
+
+
+  <div class="modal fade" id="modalsktmForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="modaldomisiliForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="modalpengantarpindahForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="modalpengantarnikahForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalpengantarceraiForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="modalktpForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="modalkkForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="modalaktaForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalsurattanahForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="defaultForm-email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          </div>
+
+          <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="defaultForm-pass" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-default">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--==========================
     Intro Section
   ============================-->
@@ -126,7 +401,7 @@
             <h2>Desa Yosomulyo, Kecamatan Gambiran, Banyuwangi</h2>
             <h3>Yosomulyo adalah sebuah nama desa di wilayah Gambiran, Kabupaten Banyuwangi, Provinsi Jawa Timur, Indonesia..</h3>
             <p>
-            Dulu desa ini bernama Karangasem. Nama itu diberikan karena dulu banyak sekali pohon asam di sana. Desa ini pada zaman PKI Di anggap tempat basis PKI di Banyuwangi sehingga sangat ditakuti di seluruh Banyuwangi. Orang-orang Yosomulyo terkenal kesaktiannya. Hal itu terbukti saat orang Yosomulyo bentrok dengan orang ANSOR Muncar. Bentrokan ini bermula dari orang-orang NU dari Muncar yang merencanakan penyerangan di Yosomulyo untuk menumpas PKI. 
+              Dulu desa ini bernama Karangasem. Nama itu diberikan karena dulu banyak sekali pohon asam di sana. Desa ini pada zaman PKI Di anggap tempat basis PKI di Banyuwangi sehingga sangat ditakuti di seluruh Banyuwangi. Orang-orang Yosomulyo terkenal kesaktiannya. Hal itu terbukti saat orang Yosomulyo bentrok dengan orang ANSOR Muncar. Bentrokan ini bermula dari orang-orang NU dari Muncar yang merencanakan penyerangan di Yosomulyo untuk menumpas PKI.
             </p>
             <h5>Pembagian Wilayah</h5>
             <ul>
@@ -187,7 +462,7 @@
               <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.3s">
                 <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
                 <h4 class="title"><a href="">Alokasi Formula (AF)</a></h4>
-                <p class="description"> Sebesar 20% dari pagu atau Rp12.000,00 miliar, dibagi berdasarkan: 	jumlah penduduk desa bobot 10%, jumlah penduduk miskin bobot 50%, luas wilayah desa bobot 15%, dan Indeks Kemahalan Konstruksi atau Indeks Kesulitan Geografis .</p>
+                <p class="description"> Sebesar 20% dari pagu atau Rp12.000,00 miliar, dibagi berdasarkan: jumlah penduduk desa bobot 10%, jumlah penduduk miskin bobot 50%, luas wilayah desa bobot 15%, dan Indeks Kemahalan Konstruksi atau Indeks Kesulitan Geografis .</p>
               </div>
             </div>
 
@@ -211,9 +486,9 @@
               <div class="wow fadeInRight">
                 <h2>Kebijakan pengalokasian Dana Desa dilakukan dengan menyempurnakan formula pengalokasian Dana Desa:</h2>
                 <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-dlay="0.5s"></i>
-                <p class="wow fadeInRight" data-wow-delay="0.5s">	penyesuaian proporsi dana yang dibagi rata (Alokasi Dasar) dan dana yang dibagi berdasarkan formula (Alokasi Formula).</p>
+                <p class="wow fadeInRight" data-wow-delay="0.5s"> penyesuaian proporsi dana yang dibagi rata (Alokasi Dasar) dan dana yang dibagi berdasarkan formula (Alokasi Formula).</p>
                 <i class="ion-ios-color-filter-outline" wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s"></i>
-                <p class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s">	memberikan afirmasi pada desa tertinggal dan sangat tertinggal yang mempunyai jumlah penduduk miskin tinggi; dan.</p>
+                <p class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s"> memberikan afirmasi pada desa tertinggal dan sangat tertinggal yang mempunyai jumlah penduduk miskin tinggi; dan.</p>
                 <i class="ion-ios-barcode-outline" class="wow fadeInRight" data-wow-delay="0.4""0.5s"></i>
                 <p class="wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">Memberikan fokus yang lebih besar pada pengentasan kemiskinan dan ketimpangan, yaitu dengan melakukan penyesuaian bobot variabel jumlah penduduk miskin dan luas wilayah.</p>
               </div>
@@ -351,8 +626,8 @@
                 <li><i class="ion-android-checkmark-circle"></i> Sebagai sumber energi listrik</li>
                 <li><i class="ion-android-checkmark-circle"></i> Sarana penyeimbang SDA</li>
                 <li><i class="ion-android-checkmark-circle"></i> Pengembangan daerah jarang tersentuh pembangunan</li>
-                
-                
+
+
               </ul>
               <a href="#" class="get-started-btn">Get Started</a>
             </div>
@@ -465,20 +740,20 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur3.jpg" alt=""></div>
-              <h4>Walter White</h4>
-              <span>KAUR PEMBANGUNAN</span>
-              <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-              </div>
+          <div class="member">
+            <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur3.jpg" alt=""></div>
+            <h4>Walter White</h4>
+            <span>KAUR PEMBANGUNAN</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
+        </div>
 
       </div>
     </section><!-- #team -->
@@ -637,14 +912,10 @@
       <div class="row">
         <div class="col-lg-6 text-lg-left text-center">
           <div class="copyright">
-          Copyright  &copy; 2019<strong>WebDesa</strong>. Kabupaten Banyuwangi
-          </div
-          
-          </div>
-        </div>
-        <div class="col-lg-6">
+            Copyright &copy; 2019<strong>WebDesa</strong>. Kabupaten Banyuwangi
+          </div </div> </div> <div class="col-lg-6">
           <nav class="footer-links text-lg-right">
-          <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
           </nav>
         </div>
       </div>
@@ -670,4 +941,5 @@
   <script src="<?php echo base_url(''); ?>/vendor2/js/main.js"></script>
 
 </body>
+
 </html>
