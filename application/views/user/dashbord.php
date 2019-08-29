@@ -60,11 +60,14 @@
                 <ul>
                   <li><a href="#">Surat Domisili</a></li>
                   <li><a href="#">Surat Pengantar Pindah</a></li>
+                  <li><a href="#">Surat Pengantar Nikah</a></li>
+                  <li><a href="#">Surat Pengantar Cerai</a></li>
                 </ul>
               </li>
               <li><a href="#">Pembuatan KTP</a></li>
               <li><a href="#">Pembuatan KK</a></li>
               <li><a href="#">Pembuatan AKTA LAHIR</a></li>
+              <li><a href="#">Pembuatan Surat Tanah</a></li>
               <li><a href="#"></a></li>
             </ul>
           </li>
@@ -132,6 +135,9 @@
               <li><i class="ion-android-checkmark-circle"></i>Dusun Sidorejo Wetan.</li>
               <li><i class="ion-android-checkmark-circle"></i>Dusun Sidotentrem.</li>
             </ul>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="#">Selengkapnya</a>
+            </div>
 
           </div>
         </div>
@@ -202,35 +208,19 @@
             <div class="col-12">
               <img class="advanced-feature-img-left" src="img/advanced-feature-2.jpg" alt="">
               <div class="wow fadeInRight">
-                <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
-                <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-duration="0.5s"></i>
-                <p class="wow fadeInRight" data-wow-duration="0.5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <i class="ion-ios-color-filter-outline wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s"></i>
-                <p class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                <i class="ion-ios-barcode-outline wow fadeInRight" data-wow-delay="0.4" data-wow-duration="0.5s"></i>
-                <p class="wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                <h2>Kebijakan pengalokasian Dana Desa dilakukan dengan menyempurnakan formula pengalokasian Dana Desa:</h2>
+                <i class="ion-ios-paper-outline" class="wow fadeInRight" data-wow-dlay="0.5s"></i>
+                <p class="wow fadeInRight" data-wow-delay="0.5s">	penyesuaian proporsi dana yang dibagi rata (Alokasi Dasar) dan dana yang dibagi berdasarkan formula (Alokasi Formula).</p>
+                <i class="ion-ios-color-filter-outline" wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s"></i>
+                <p class="wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="0.5s">	memberikan afirmasi pada desa tertinggal dan sangat tertinggal yang mempunyai jumlah penduduk miskin tinggi; dan.</p>
+                <i class="ion-ios-barcode-outline" class="wow fadeInRight" data-wow-delay="0.4""0.5s"></i>
+                <p class="wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">Memberikan fokus yang lebih besar pada pengentasan kemiskinan dan ketimpangan, yaitu dengan melakukan penyesuaian bobot variabel jumlah penduduk miskin dan luas wilayah.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="features-row section-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <img class="advanced-feature-img-right wow fadeInRight" src="img/advanced-feature-3.jpg" alt="">
-              <div class="wow fadeInLeft">
-                <h2>Duis aute irure dolor in reprehenderit in voluptate velit esse</h2>
-                <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                <i class="ion-ios-albums-outline"></i>
-                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section><!-- #advanced-features -->
 
     <!--==========================
@@ -258,9 +248,9 @@
       <div class="container">
 
         <div class="section-header">
-          <h3 class="section-title">More Features</h3>
+          <h3 class="section-title">Agenda</h3>
           <span class="section-divider"></span>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Agenda kegiatan desa untuk menunjang dan mengambangkan minat bakat masyarakat</p>
         </div>
 
         <div class="row">
@@ -268,32 +258,32 @@
           <div class="col-lg-6">
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="ion-ios-stopwatch-outline"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident etiro rabeta lingo.</p>
+              <h4 class="title"><a href="">Kerja Bakti</a></h4>
+              <p class="description">Kerja bakti desa mewajibkan warganya setiap RT untuk membersihkan lingkugan sekitar dan umum.</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="box wow fadeInRight">
               <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata nodera clas.</p>
+              <h4 class="title"><a href="">Kegiatan Bulanan</a></h4>
+              <p class="description">Agenda evaluasi dan pelaksana untuk situasi dan kondisi desa.</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="ion-ios-heart-outline"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade.</p>
+              <h4 class="title"><a href="">Musyawarah</a></h4>
+              <p class="description">Dilakukan setiap pengadaan agenda acara atau even yang berhubungan dengan waktu dan tempat desa.</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="box wow fadeInRight">
               <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
+              <h4 class="title"><a href="">Karang Taruna</a></h4>
+              <p class="description">Kegiatan mingguan untuk meningkatkan kemampuan minat bakat dan membangun inovasi desa</p>
             </div>
           </div>
 
@@ -344,23 +334,24 @@
       <div class="container">
 
         <div class="section-header">
-          <h3 class="section-title">Pricing</h3>
+          <h3 class="section-title">Inovasi Desa</h3>
           <span class="section-divider"></span>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Komunitas pengembang dan inovasi</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-6">
             <div class="box wow fadeInLeft">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> month</span></h4>
+              <h3>Inovasi PLTMH</h3>
+              <h4><i><span>Pembangkit Listrik Tenaga Mikro Hidro</span></i></h4>
               <ul>
-                <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-                <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-                <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-                <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+                <li><i class="ion-android-checkmark-circle"></i> Inovasi untuk daerah terisolir</li>
+                <li><i class="ion-android-checkmark-circle"></i> Sebagai sumber energi listrik</li>
+                <li><i class="ion-android-checkmark-circle"></i> Sarana penyeimbang SDA</li>
+                <li><i class="ion-android-checkmark-circle"></i> Pengembangan daerah jarang tersentuh pembangunan</li>
+                
+                
               </ul>
               <a href="#" class="get-started-btn">Get Started</a>
             </div>
@@ -368,14 +359,14 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="box featured wow fadeInUp">
-              <h3>Business</h3>
-              <h4><sup>$</sup>29<span> month</span></h4>
+              <h3>Inovasi Return BUMDes</h3>
+              <h4><span> Bidang Kewirausahaan</span></h4>
               <ul>
-                <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-                <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-                <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-                <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+                <li><i class="ion-android-checkmark-circle"></i> Pengembang Wirausaha Desa</li>
+                <li><i class="ion-android-checkmark-circle"></i> Pencipta Lapangan kerja Baru</li>
+                <li><i class="ion-android-checkmark-circle"></i> Wadah pengembang cipta inovasi</li>
+                <li><i class="ion-android-checkmark-circle"></i> Mendongkrak Perekonomian Desa</li>
+                <li><i class="ion-android-checkmark-circle"></i> Menjadikan Cipta Desa Wisata</li>
               </ul>
               <a href="#" class="get-started-btn">Get Started</a>
             </div>
@@ -383,14 +374,14 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="box wow fadeInRight">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>49<span> month</span></h4>
+              <h3>Inovasi BPJS Desa Mandiri</h3>
+              <h4><span> Bidang Kesehatan</span></h4>
               <ul>
-                <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
-                <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
-                <li><i class="ion-android-checkmark-circle"></i> Nulla at volutpat diam uteera</li>
-                <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
-                <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
+                <li><i class="ion-android-checkmark-circle"></i> Pemerataan Jaminan Kesehatan</li>
+                <li><i class="ion-android-checkmark-circle"></i> Pemerataan Fasilitas Kesehatan</li>
+                <li><i class="ion-android-checkmark-circle"></i> Sarana Pembantu Polindes</li>
+                <li><i class="ion-android-checkmark-circle"></i> Sarana pertolongan Pertama</li>
+                <li><i class="ion-android-checkmark-circle"></i> Jaminan mayarakat kurang mampu </li>
               </ul>
               <a href="#" class="get-started-btn">Get Started</a>
             </div>
@@ -592,7 +583,11 @@
 
               <div>
                 <i class="ion-ios-telephone-outline"></i>
-                <p>+0331 55 55488 86</p>
+                <p>Kantor: +0331 55 55488 86</p>
+              </div>
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>HP: +62 813 3322 277 </p>
               </div>
 
             </div>
