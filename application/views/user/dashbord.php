@@ -83,34 +83,55 @@
 
 
 
-  <div class="modal fade" id="modalsktmForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+  <div class="modal fade" id="modalsktmForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Surat Keterangan Tidak Mampu/h4>
+        <button type="button" class="close" data-dismiss="modalsktm" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-nik">NIK</label>
+          <input type="integer" id="defaultForm-email" class="form-control validate">  
         </div>
-        <div class="modal-body mx-3">
-          <div class="md-form mb-5">
-            <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="email" id="defaultForm-email" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
-          </div>
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-nama">Nama Lengkap</label>
+          <input type="text" id="defaultForm-pass" class="form-control validate">
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-tanggal">Tempat Tanggal & Lahir</label>
+          <input type="text" id="defaultForm-email" class="form-control validate">  
+        </div>
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-jk">Jenis Kelamin</label>
+          <input type="text" id="defaultForm-pass" class="form-control validate">
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-agama">Agama</label>
+          <input type="text" id="defaultForm-email" class="form-control validate">  
+        </div>
+        <div class="md-form mb-4">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-pass">Alamat</label>
+          <input type="text" id="defaultForm-pass" class="form-control validate">
+        </div>
 
-          <div class="md-form mb-4">
-            <i class="fas fa-lock prefix grey-text"></i>
-            <input type="password" id="defaultForm-pass" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
-          </div>
-        </div>
-        <div class="modal-footer d-flex justify-content-center">
-          <button class="btn btn-default">Login</button>
-        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Create</button>
       </div>
     </div>
   </div>
+</div>
 
 
 
@@ -369,7 +390,7 @@
     <div class="product-screens">
 
       <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-        <img src="<?php echo base_url(''); ?>/vendor2/img/product-screen-2.png" alt="">
+        <img src="<?php echo base_url(''); ?>/vendor2/img/.png" alt="">
       </div>
 
     </div>
@@ -695,7 +716,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-6">
             <div class="member">
               <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/sekretaris.jpg" alt=""></div>
@@ -712,7 +732,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur1.jpg" alt=""></div>
+              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur5.png" alt=""></div>
               <h4>William Anderson</h4>
               <span>KASI PEMERINTAHAN</span>
               <div class="social">
