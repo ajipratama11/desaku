@@ -1,7 +1,4 @@
-<!-- Begin Page Content -->
-<?= $this->load->view('templates/header'); ?>
-<?= $this->load->view('templates/sidebar'); ?>
-<?= $this->load->view('templates/topbar'); ?>
+
 <div class="container-fluid">
 
     <!-- Page Heading -->
@@ -44,4 +41,3 @@
     <!-- /.container-fluid -->
 
 </div>
-<?= $this->load->view('templates/footer'); ?>

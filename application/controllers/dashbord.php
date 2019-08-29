@@ -14,6 +14,4 @@ class dashbord extends CI_Controller
 	
 		$this->load->view('user/dashbord');
 	}
-
-	
 }
