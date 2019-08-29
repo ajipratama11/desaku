@@ -49,7 +49,7 @@
       <nav id="nav-menu-container">
       
         <ul class="nav-menu">
-          <li class="menu-active"><a href="<?= base_url('Admin/Admin'); ?>">Beranda</a></li>
+          <li class="menu-active"><a href="#intro">Beranda</a></li>
           <li><a href="#about">Tentang Kami</a></li>
           <li><a href="#features">Info APBD</a></li>
           <li><a href="#pricing">Inovasi Desa</a></li>
@@ -74,45 +74,10 @@
           <li><a href="#team">Perangkat Desa</a></li>
           <li><a href="#gallery">Galeri</a></li>
           <li><a href="#contact">Kontak</a></li>
-          <li><a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalLoginForm">Login</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-
-  <!-- modal login -->
-  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <?= form_open_multipart('Auth'); ?>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-3">
-        <i class="ion-ios-email-outline"></i>
-          <input type="email" id="email" name="email" class="form-control validate">
-          <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
-        </div>
-
-        <div class="md-form mb-4">
-          <i class="ion-ios-keypad-outline"></i>
-          <input type="password" id="password" name="password" class="form-control validate">
-          <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
-        </div>
-
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button type="submit" class="btn btn-default">Login</button>
-        <?= form_close(); ?>
-      </div>
-    </div>
-  </div>
-</div>
  
   <!--==========================
     Intro Section
@@ -445,7 +410,7 @@
         <div class="row wow fadeInUp">
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/team/team-1.jpg" alt=""></div>
+              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kades.jpg" alt=""></div>
               <h4>Walter White</h4>
               <span>Kepala Desa</span>
               <div class="social">
@@ -459,7 +424,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/team/team-2.jpg" alt=""></div>
+              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/sekretaris.jpg" alt=""></div>
               <h4>Sarah Jhinson</h4>
               <span>Sekretaris Desa</span>
               <div class="social">
@@ -473,7 +438,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/team/team-3.jpg" alt=""></div>
+              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur1.jpg" alt=""></div>
               <h4>William Anderson</h4>
               <span>KASI PEMERINTAHAN</span>
               <div class="social">
@@ -487,7 +452,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/team/team-4.jpg" alt=""></div>
+              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur4.jpg" alt=""></div>
               <h4>Amanda Jepson</h4>
               <span>KAUR KEUANGAN</span>
               <div class="social">
@@ -502,9 +467,9 @@
         
         <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/team/team-1.jpg" alt=""></div>
+              <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur3.jpg" alt=""></div>
               <h4>Walter White</h4>
-              <span>Kepala Desa</span>
+              <span>KAUR PEMBANGUNAN</span>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
                 <a href=""><i class="fa fa-facebook"></i></a>
@@ -532,8 +497,8 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="gallery-item wow fadeInUp">
-              <a href="<?php echo base_url(''); ?>/vendor2/img/gam1.jpg" class="gallery-popup">
-                <img src="<?php echo base_url(''); ?>/vendor2/img/gam1.jpg" alt="">
+              <a href="<?php echo base_url(''); ?>/vendor2/img/gam7.jpg" class="gallery-popup">
+                <img src="<?php echo base_url(''); ?>/vendor2/img/gam7.jpg" alt="">
               </a>
             </div>
           </div>
