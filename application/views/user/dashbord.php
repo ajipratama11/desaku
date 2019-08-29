@@ -389,8 +389,11 @@
 
     <div class="product-screens">
 
+      <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+        <img src="<?php echo base_url(''); ?>/vendor2/img/jatim.png" width="200px" alt="">
+      </div>
       <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-        <img src="<?php echo base_url(''); ?>/vendor2/img/.png" alt="">
+        <img src="<?php echo base_url(''); ?>/vendor2/img/logobwi.jpg" width="200px" alt="">
       </div>
 
     </div>
