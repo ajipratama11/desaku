@@ -92,7 +92,7 @@ class dashbord extends CI_Controller
 			'keperluan' => $keperluan,
 			
 		);
-		$this->M_data->add_akta($data, 'akta');
+		$this->M_data->add_kk($data, 'kk');
 		echo "<script>
                 alert('Permintaan terkirim!');
                 </script>";
@@ -119,7 +119,7 @@ class dashbord extends CI_Controller
 			'keperluan' => $keperluan,
 			
 		);
-		$this->M_data->add_akta($data, 'akta');
+		$this->M_data->add_ktp($data, 'ktp');
 		echo "<script>
                 alert('Permintaan terkirim!');
                 </script>";
@@ -146,13 +146,13 @@ class dashbord extends CI_Controller
 			'keperluan' => $keperluan,
 			
 		);
-		$this->M_data->add_akta($data, 'akta');
+		$this->M_data->add_surattanah($data, 'surattanah');
 		echo "<script>
                 alert('Permintaan terkirim!');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
-	
+
 	function add_rekom()
 	{
 		$nik = $this->input->post('nik');
@@ -173,7 +173,7 @@ class dashbord extends CI_Controller
 			'keperluan' => $keperluan,
 			
 		);
-		$this->M_data->add_akta($data, 'akta');
+		$this->M_data->add_rekom($data, 'rekom');
 		echo "<script>
                 alert('Permintaan terkirim!');
                 </script>";
