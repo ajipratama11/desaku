@@ -58,7 +58,7 @@
             <ul>
               <li class="menu-has-children"><a href="">Surat Rekom</a>
                 <ul>
-                  <li><a href="" data-toggle="modal" data-target="#modaldomisliForm">Surat Domisili</a></li>  
+                  <li><a href="" data-toggle="modal" data-target="#modaldomisiliForm">Surat Domisili</a></li>  
                   <li><a href="" data-toggle="modal" data-target="#modalpengantarpindahForm">Surat Pengantar Pindah</a></li>
                   <li><a href="" data-toggle="modal" data-target="#modalpengantarnikahForm">Surat Pengantar Nikah</a></li>
                   <li><a href="" data-toggle="modal" data-target="#modalpengantarceraiForm">Surat Pengantar Cerai</a></li>
