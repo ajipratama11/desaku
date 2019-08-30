@@ -58,10 +58,10 @@
             <ul>
               <li class="menu-has-children"><a href="">Surat Rekom</a>
                 <ul>
-                  <li><a href="" data-toggle="modal" data-target="#modaldomisiliForm">Surat Domisili</a></li>
+                  <li><a href="" data-toggle="modal" data-target="#modalpengantarceraiForm">Surat Domisili</a></li>  
                   <li><a href="" data-toggle="modal" data-target="#modalpengantarpindahForm">Surat Pengantar Pindah</a></li>
                   <li><a href="" data-toggle="modal" data-target="#modalpengantarnikahForm">Surat Pengantar Nikah</a></li>
-                  <li><a href="" data-toggle="modal" data-target="#modalpengantarceraiForm">Surat Pengantar Cerai</a></li>
+                  <li><a href="" data-toggle="modal" data-target="#modaldomisiliForm">Surat Pengantar Cerai</a></li>
                 </ul>
               </li>
               <li><a href="" data-toggle="modal" data-target="#modalsktmForm">Pembuatan SKTM</a></li>
@@ -450,7 +450,7 @@
 
         <div class="row">
           <div class="col-lg-6 about-img wow fadeInLeft">
-            <img src="<?php echo base_url(''); ?>/vendor2/img/gambiran.jpg" alt="">
+            <img src="<?php echo base_url(''); ?>/vendor2/img/pemdes.jpg" alt="">
           </div>
 
           <div class="col-lg-6 content wow fadeInRight">
@@ -597,7 +597,7 @@
             <div class="box wow fadeInRight">
               <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
               <h4 class="title"><a href="">Kegiatan Bulanan</a></h4>
-              <p class="description">Agenda evaluasi dan pelaksana untuk situasi dan kondisi desa.</p>
+              <p class="description">Agenda dan evaluasi pelaksanaan program desa serta situasi dan kondisi desa.</p>
             </div>
           </div>
 
@@ -741,7 +741,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="member">
               <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kades.jpg" alt=""></div>
-              <h4>Walter White</h4>
+              <h4>Abdul Gafur Mas'ud</h4>
               <span>Kepala Desa</span>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
@@ -754,7 +754,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="member">
               <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/sekretaris.jpg" alt=""></div>
-              <h4>Sarah Jhinson</h4>
+              <h4>Sarah Meryanda</h4>
               <span>Sekretaris Desa</span>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
@@ -768,7 +768,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="member">
               <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur5.png" alt=""></div>
-              <h4>William Anderson</h4>
+              <h4>Irwan Bahtiar</h4>
               <span>KASI PEMERINTAHAN</span>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
@@ -782,7 +782,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="member">
               <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur4.jpeg" alt=""></div>
-              <h4>Amanda Jepson</h4>
+              <h4>Indah Mulyani</h4>
               <span>KAUR KEUANGAN</span>
               <div class="social">
                 <a href=""><i class="fa fa-twitter"></i></a>
@@ -797,7 +797,7 @@
         <div class="col-lg-3 col-md-6">
           <div class="member">
             <div class="pic"><img src="<?php echo base_url(''); ?>/vendor2/img/kaur3.jpg" alt=""></div>
-            <h4>Walter White</h4>
+            <h4>Dwining Andani</h4>
             <span>KAUR PEMBANGUNAN</span>
             <div class="social">
               <a href=""><i class="fa fa-twitter"></i></a>
