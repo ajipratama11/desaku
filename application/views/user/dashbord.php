@@ -328,22 +328,53 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
+        <?= form_open_multipart('dashbord/add_akta'); ?>
         <div class="modal-body mx-3">
-          <div class="md-form mb-5">
+          <div class="md-form mb-4">
             <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="email" id="defaultForm-email" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+            <input type="number" id="nik" name="nik" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your NIK</label>
           </div>
-
           <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
-            <input type="password" id="defaultForm-pass" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+            <input type="text" id="nama" name="nama" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your NAMA</label>
+          </div>
+       
+        <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="text" id="alamat" name="alamat" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your alamat</label>
+          </div>
+    
+        <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="text" id="tempatlahir" name="tempatlahir" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your tempatlahir</label>
+          </div>
+      
+        <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="date" id="tgllahir" name="tgllahir" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your tgllahir</label>
+          </div>
+      
+        <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="text" id="agama" name="agama" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your agama</label>
+          </div>
+        
+        <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="text" id="keperluan" name="keperluan" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your keperluan</label>
           </div>
         </div>
         <div class="modal-footer d-flex justify-content-center">
-          <button class="btn btn-default">Login</button>
+          <button type="submit" class="btn btn-default">submit</button>
         </div>
+        <?php form_close(); ?>
       </div>
     </div>
   </div>

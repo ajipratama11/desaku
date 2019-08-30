@@ -6,6 +6,7 @@ class dashbord extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model('M_data');
 	
 	}
 
@@ -13,27 +14,167 @@ class dashbord extends CI_Controller
 	{
 	
 		$this->load->view('user/dashbord');
+		
 	}
-	function add_event()
+	function add_akta()
 	{
 		$nik = $this->input->post('nik');
 		$nama = $this->input->post('nama');
 		$alamat = $this->input->post('alamat');
-		$agama = $this->input->post('longlat');
+		$tempatlahir = $this->input->post('tempatlahir');
+		$tgllahir = $this->input->post('tgllahir');
+		$agama = $this->input->post('agama');
 		$keperluan = $this->input->post('keperluan');
 	
 		$data = array(
 			'nik' => $nik,
 			'nama' => $nama,
 			'alamat' => $alamat,
+			'tempatlahir' => $tempatlahir,
+			'tgllahir' => $tgllahir,
 			'agama' => $agama,
 			'keperluan' => $keperluan,
 			
 		);
-		$this->m_data->add_event($data, 'akta');
+		$this->M_data->add_akta($data, 'akta');
 		echo "<script>
-                alert('Event Dibuat!');
+                alert('Permintaan terkirim!');
                 </script>";
-		echo '<script>window.location="list_event";</script>';
+		echo '<script>window.location="index";</script>';
+	}
+
+	function add_sktm()
+	{
+		$nik = $this->input->post('nik');
+		$nama = $this->input->post('nama');
+		$alamat = $this->input->post('alamat');
+		$tempatlahir = $this->input->post('tempatlahir');
+		$tgllahir = $this->input->post('tgllahir');
+		$agama = $this->input->post('agama');
+		$keperluan = $this->input->post('keperluan');
+	
+		$data = array(
+			'nik' => $nik,
+			'nama' => $nama,
+			'alamat' => $alamat,
+			'tempatlahir' => $tempatlahir,
+			'tgllahir' => $tgllahir,
+			'agama' => $agama,
+			'keperluan' => $keperluan,
+			
+		);
+		$this->M_data->add_akta($data, 'akta');
+		echo "<script>
+                alert('Permintaan terkirim!');
+                </script>";
+		echo '<script>window.location="index";</script>';
+	}
+
+	function add_kk()
+	{
+		$nik = $this->input->post('nik');
+		$nama = $this->input->post('nama');
+		$alamat = $this->input->post('alamat');
+		$tempatlahir = $this->input->post('tempatlahir');
+		$tgllahir = $this->input->post('tgllahir');
+		$agama = $this->input->post('agama');
+		$keperluan = $this->input->post('keperluan');
+	
+		$data = array(
+			'nik' => $nik,
+			'nama' => $nama,
+			'alamat' => $alamat,
+			'tempatlahir' => $tempatlahir,
+			'tgllahir' => $tgllahir,
+			'agama' => $agama,
+			'keperluan' => $keperluan,
+			
+		);
+		$this->M_data->add_akta($data, 'akta');
+		echo "<script>
+                alert('Permintaan terkirim!');
+                </script>";
+		echo '<script>window.location="index";</script>';
+	}
+
+	function add_ktp()
+	{
+		$nik = $this->input->post('nik');
+		$nama = $this->input->post('nama');
+		$alamat = $this->input->post('alamat');
+		$tempatlahir = $this->input->post('tempatlahir');
+		$tgllahir = $this->input->post('tgllahir');
+		$agama = $this->input->post('agama');
+		$keperluan = $this->input->post('keperluan');
+	
+		$data = array(
+			'nik' => $nik,
+			'nama' => $nama,
+			'alamat' => $alamat,
+			'tempatlahir' => $tempatlahir,
+			'tgllahir' => $tgllahir,
+			'agama' => $agama,
+			'keperluan' => $keperluan,
+			
+		);
+		$this->M_data->add_akta($data, 'akta');
+		echo "<script>
+                alert('Permintaan terkirim!');
+                </script>";
+		echo '<script>window.location="index";</script>';
+	}
+
+	function add_surattanah()
+	{
+		$nik = $this->input->post('nik');
+		$nama = $this->input->post('nama');
+		$alamat = $this->input->post('alamat');
+		$tempatlahir = $this->input->post('tempatlahir');
+		$tgllahir = $this->input->post('tgllahir');
+		$agama = $this->input->post('agama');
+		$keperluan = $this->input->post('keperluan');
+	
+		$data = array(
+			'nik' => $nik,
+			'nama' => $nama,
+			'alamat' => $alamat,
+			'tempatlahir' => $tempatlahir,
+			'tgllahir' => $tgllahir,
+			'agama' => $agama,
+			'keperluan' => $keperluan,
+			
+		);
+		$this->M_data->add_akta($data, 'akta');
+		echo "<script>
+                alert('Permintaan terkirim!');
+                </script>";
+		echo '<script>window.location="index";</script>';
+	}
+	
+	function add_rekom()
+	{
+		$nik = $this->input->post('nik');
+		$nama = $this->input->post('nama');
+		$alamat = $this->input->post('alamat');
+		$tempatlahir = $this->input->post('tempatlahir');
+		$tgllahir = $this->input->post('tgllahir');
+		$agama = $this->input->post('agama');
+		$keperluan = $this->input->post('keperluan');
+	
+		$data = array(
+			'nik' => $nik,
+			'nama' => $nama,
+			'alamat' => $alamat,
+			'tempatlahir' => $tempatlahir,
+			'tgllahir' => $tgllahir,
+			'agama' => $agama,
+			'keperluan' => $keperluan,
+			
+		);
+		$this->M_data->add_akta($data, 'akta');
+		echo "<script>
+                alert('Permintaan terkirim!');
+                </script>";
+		echo '<script>window.location="index";</script>';
 	}
 }
