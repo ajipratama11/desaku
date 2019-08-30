@@ -110,4 +110,127 @@ class User extends CI_Controller
             }
         }
     }
+    public function akta()
+    {
+        $data['title'] = 'Surat akta';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('pembuatan/akta', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function kk()
+    {
+        $data['title'] = 'Pembuatan KK';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('pembuatan/kk', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function ktp()
+    {
+        $data['title'] = 'Pembuatan KTP';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('pembuatan/ktp', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function sktm()
+    {
+        $data['title'] = 'pembuatan sktm';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('pembuatan/sktm', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function domisili()
+    {
+        $data['title'] = 'Surat Domisili';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('surat/domisili', $data);
+        $this->load->view('templates/footer');
+    }
+    public function pengantarpindah()
+    {
+        $data['title'] = 'Surat Pengantar Pindah';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('surat/pengantarpindah', $data);
+        $this->load->view('templates/footer');
+    }
+    public function pengantarnikah()
+    {
+        $data['title'] = 'Surat Pengantar Nikah';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('surat/pengantarnikah', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function pengantarcerai()
+    {
+        $data['title'] = 'Surat Pengantar Cerai';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('surat/pengantarcerai', $data);
+        $this->load->view('templates/footer');
+    }
+
+    public function surattanah()
+    {
+        $data['title'] = 'pembuatan surat tanah';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('pembuatan/surattanah', $data);
+        $this->load->view('templates/footer');
+    }
 }
