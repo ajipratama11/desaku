@@ -153,30 +153,62 @@ class dashbord extends CI_Controller
 		echo '<script>window.location="index";</script>';
 	}
 	
-	function add_rekom()
+	function add_suratdomisili()
 	{
 		$nik = $this->input->post('nik');
 		$nama = $this->input->post('nama');
-		$alamat = $this->input->post('alamat');
+		$jenis_kelamin = $this->input->post('jenis_kelamin');
 		$tempatlahir = $this->input->post('tempatlahir');
 		$tgllahir = $this->input->post('tgllahir');
 		$agama = $this->input->post('agama');
+		$pekerjaan = $this->input->post('pekerjaan');
+		$alamat_lama = $this->input->post('alamat_lama');
+		$alamat_baru = $this->input->post('alamat_baru');
 		$keperluan = $this->input->post('keperluan');
 	
 		$data = array(
 			'nik' => $nik,
 			'nama' => $nama,
-			'alamat' => $alamat,
+			'jenis_kelamin' => $jenis_kelamin,
 			'tempatlahir' => $tempatlahir,
 			'tgllahir' => $tgllahir,
 			'agama' => $agama,
+			'pekerjaan' => $pekerjaan,
+			'alamat_lama' => $alamat_lama,
+			'alamat_baru' => $alamat_baru,
 			'keperluan' => $keperluan,
 			
 		);
-		$this->M_data->add_akta($data, 'akta');
+		$this->M_data->add_suratdomisili($data, 'suratdomisili');
 		echo "<script>
                 alert('Permintaan terkirim!');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
+}
+function add_suratpengantarpindah()
+{
+	$nik = $this->input->post('nik');
+	$nama = $this->input->post('nama');
+	$alamat = $this->input->post('alamat');
+	$tempatlahir = $this->input->post('tempatlahir');
+	$tgllahir = $this->input->post('tgllahir');
+	$agama = $this->input->post('agama');
+	$keperluan = $this->input->post('keperluan');
+
+	$data = array(
+		'nik' => $nik,
+		'nama' => $nama,
+		'alamat' => $alamat,
+		'tempatlahir' => $tempatlahir,
+		'tgllahir' => $tgllahir,
+		'agama' => $agama,
+		'keperluan' => $keperluan,
+		
+	);
+	$this->M_data->add_akta($data, 'akta');
+	echo "<script>
+			alert('Permintaan terkirim!');
+			</script>";
+	echo '<script>window.location="index";</script>';
 }
