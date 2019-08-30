@@ -204,10 +204,6 @@ h6 {
   height: 50%;
 }
 
-#intro .product-screens img {
-  box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
-}
-
 #intro .product-screens .product-screen-1 {
   position: absolute;
   z-index: 30;
@@ -322,7 +318,7 @@ h6 {
 .nav-menu ul {
   margin: 4px 0 0 0;
   padding: 10px;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  
   background: #fff;
 }
 
@@ -719,7 +715,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #more-features .box {
   padding: 40px;
   margin-bottom: 30px;
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+
   background: #fff;
   transition: 0.4s;
 }
@@ -792,7 +788,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #pricing .box {
   padding: 40px;
   margin-bottom: 30px;
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+ 
   background: #fff;
   text-align: center;
 }
@@ -1012,7 +1008,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #contact {
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
   padding: 60px 0;
   overflow: hidden;
 }
@@ -1115,7 +1111,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .form input,
 #contact .form textarea {
   border-radius: 0;
-  box-shadow: none;
+  
   font-size: 14px;
 }
 
@@ -1137,7 +1133,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer {
   background: #fff;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  
   padding: 30px 0;
   color: #333;
   font-size: 14px;

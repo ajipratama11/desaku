@@ -47,23 +47,25 @@ class dashbord extends CI_Controller
 	{
 		$nik = $this->input->post('nik');
 		$nama = $this->input->post('nama');
-		$alamat = $this->input->post('alamat');
-		$tempatlahir = $this->input->post('tempatlahir');
-		$tgllahir = $this->input->post('tgllahir');
+		$ttl = $this->input->post('ttl');
+		$jenis_kel = $this->input->post('jenis_kel');
 		$agama = $this->input->post('agama');
+		$alamat = $this->input->post('alamat');
+		$pekerjaan = $this->input->post('pekerjaan');
 		$keperluan = $this->input->post('keperluan');
 	
 		$data = array(
 			'nik' => $nik,
 			'nama' => $nama,
-			'alamat' => $alamat,
-			'tempatlahir' => $tempatlahir,
-			'tgllahir' => $tgllahir,
+			'ttl' => $ttl,
+			'jenis_kel' => $jenis_kel,
 			'agama' => $agama,
+			'alamat' => $alamat,
+			'pekerjaan' => $pekerjaan,
 			'keperluan' => $keperluan,
 			
 		);
-		$this->M_data->add_akta($data, 'akta');
+		$this->M_data->add_sktm($data, 'sktm');
 		echo "<script>
                 alert('Permintaan terkirim!');
                 </script>";

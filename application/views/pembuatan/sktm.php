@@ -20,27 +20,29 @@
                         <th>No</th>
                         <th>NIK</th>
                         <th>Nama</th>
-                        <th>Alamat</th>
-                        <th>Tempat Lahir</th>
-                        <th>Tanggal Lahir</th>
+                        <th>TTL</th>
+                        <th>Jenis Kelamin</th>
                         <th>Agama</th>
+                        <th>Alamat</th>
+                        <th>Pekerjaan</th>
                         <th>Kepeluan</th>
-                        <th>Action</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
                     <?php
                     $no = 1;
-                    foreach ($akta as $i) {
+                    foreach ($sktm as $i) {
                         ?>
                         <tr>
                             <th><?= $no++ ?></th>
                             <td><?= $i->nik ?></td>
                             <td><?= $i->nama ?></td>
-                            <td><?= $i->alamat ?></td>
-                            <td><?= $i->tempatlahir ?></td>
-                            <td><?= $i->tgllahir ?></td>
+                            <td><?= $i->ttl ?></td>
+                            <td><?= $i->jenis_kelamin ?></td>
                             <td><?= $i->agama ?></td>
+                            <td><?= $i->alamat ?></td>
+                            <td><?= $i->pekerjaan ?></td>
                             <td><?= $i->keperluan ?></td>
                             <td><button class="btn btn-danger btn-round">Hapus</button></td>
                         </tr>
