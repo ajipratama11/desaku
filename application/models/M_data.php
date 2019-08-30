@@ -21,7 +21,16 @@ function add_surattanah($data,$table){
 function add_sktm($data,$table){
     $this->db->insert($table,$data);
 }
-function add_rekom($data,$table){
+function add_domisili($data,$table){
+    $this->db->insert($table,$data);
+}
+function add_pengantarpindah($data,$table){
+    $this->db->insert($table,$data);
+}
+function add_pengantarnikah($data,$table){
+    $this->db->insert($table,$data);
+}
+function add_pengantarcerai($data,$table){
     $this->db->insert($table,$data);
 }
 }

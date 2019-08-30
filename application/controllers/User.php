@@ -129,7 +129,7 @@ class User extends CI_Controller
         $data['title'] = 'Pembuatan KK';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+        $data['kk'] = $this->db->query("SELECT * FROM kk ")->result();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -143,7 +143,7 @@ class User extends CI_Controller
         $data['title'] = 'Pembuatan KTP';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+        $data['ktp'] = $this->db->query("SELECT * FROM ktp ")->result();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -157,7 +157,7 @@ class User extends CI_Controller
         $data['title'] = 'pembuatan sktm';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+        $data['sktm'] = $this->db->query("SELECT * FROM sktm ")->result();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -171,7 +171,7 @@ class User extends CI_Controller
         $data['title'] = 'Surat Domisili';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+        $data['domisili'] = $this->db->query("SELECT * FROM domisili ")->result();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -184,7 +184,7 @@ class User extends CI_Controller
         $data['title'] = 'Surat Pengantar Pindah';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+        $data['pengantarpindah'] = $this->db->query("SELECT * FROM pengantarpindah ")->result();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -197,7 +197,7 @@ class User extends CI_Controller
         $data['title'] = 'Surat Pengantar Nikah';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+        $data['pengantarnikah'] = $this->db->query("SELECT * FROM pengantarnikah ")->result();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -211,7 +211,7 @@ class User extends CI_Controller
         $data['title'] = 'Surat Pengantar Cerai';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+        $data['pengantarcerai'] = $this->db->query("SELECT * FROM pengantarcerai ")->result();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
@@ -225,7 +225,7 @@ class User extends CI_Controller
         $data['title'] = 'pembuatan surat tanah';
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['akta'] = $this->db->query("SELECT * FROM akta ")->result();
+        $data['surattanah'] = $this->db->query("SELECT * FROM surattanah ")->result();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);

@@ -153,7 +153,7 @@ class dashbord extends CI_Controller
 		echo '<script>window.location="index";</script>';
 	}
 
-	function add_rekom()
+	function add_domisili()
 	{
 		$nik = $this->input->post('nik');
 		$nama = $this->input->post('nama');
@@ -173,7 +173,85 @@ class dashbord extends CI_Controller
 			'keperluan' => $keperluan,
 			
 		);
-		$this->M_data->add_rekom($data, 'rekom');
+		$this->M_data->add_domisili($data, 'domisili');
+		echo "<script>
+                alert('Permintaan terkirim!');
+                </script>";
+		echo '<script>window.location="index";</script>';
+	}
+	function add_pengantarpindah()
+	{
+		$nik = $this->input->post('nik');
+		$nama = $this->input->post('nama');
+		$alamat = $this->input->post('alamat');
+		$tempatlahir = $this->input->post('tempatlahir');
+		$tgllahir = $this->input->post('tgllahir');
+		$agama = $this->input->post('agama');
+		$keperluan = $this->input->post('keperluan');
+	
+		$data = array(
+			'nik' => $nik,
+			'nama' => $nama,
+			'alamat' => $alamat,
+			'tempatlahir' => $tempatlahir,
+			'tgllahir' => $tgllahir,
+			'agama' => $agama,
+			'keperluan' => $keperluan,
+			
+		);
+		$this->M_data->add_pengantarpindah($data, 'pengantarpindah');
+		echo "<script>
+                alert('Permintaan terkirim!');
+                </script>";
+		echo '<script>window.location="index";</script>';
+	}
+	function add_pengantarnikah()
+	{
+		$nik = $this->input->post('nik');
+		$nama = $this->input->post('nama');
+		$alamat = $this->input->post('alamat');
+		$tempatlahir = $this->input->post('tempatlahir');
+		$tgllahir = $this->input->post('tgllahir');
+		$agama = $this->input->post('agama');
+		$keperluan = $this->input->post('keperluan');
+	
+		$data = array(
+			'nik' => $nik,
+			'nama' => $nama,
+			'alamat' => $alamat,
+			'tempatlahir' => $tempatlahir,
+			'tgllahir' => $tgllahir,
+			'agama' => $agama,
+			'keperluan' => $keperluan,
+			
+		);
+		$this->M_data->add_pengantarnikah($data, 'pengantarnikah');
+		echo "<script>
+                alert('Permintaan terkirim!');
+                </script>";
+		echo '<script>window.location="index";</script>';
+	}
+	function add_pengantarcerai()
+	{
+		$nik = $this->input->post('nik');
+		$nama = $this->input->post('nama');
+		$alamat = $this->input->post('alamat');
+		$tempatlahir = $this->input->post('tempatlahir');
+		$tgllahir = $this->input->post('tgllahir');
+		$agama = $this->input->post('agama');
+		$keperluan = $this->input->post('keperluan');
+	
+		$data = array(
+			'nik' => $nik,
+			'nama' => $nama,
+			'alamat' => $alamat,
+			'tempatlahir' => $tempatlahir,
+			'tgllahir' => $tgllahir,
+			'agama' => $agama,
+			'keperluan' => $keperluan,
+			
+		);
+		$this->M_data->add_pengantarcerai($data, 'pengantarcerai');
 		echo "<script>
                 alert('Permintaan terkirim!');
                 </script>";
