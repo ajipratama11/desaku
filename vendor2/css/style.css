@@ -210,26 +210,26 @@ h6 {
 
 #intro .product-screens .product-screen-1 {
   position: absolute;
-  z-index: 20;
+  z-index: 30;
   left: calc(50% + 54px);
   bottom: 0;
-  top: 30px;
+  top: 50px;
 }
 
 #intro .product-screens .product-screen-2 {
   position: absolute;
-  z-index: 20;
+  z-index: 30;
   left: calc(50% - 154px);
   bottom: 0;
-  top: 30px;
+  top: 50px;
 }
 
 #intro .product-screens .product-screen-1.5 {
   position: absolute;
   z-index: 20;
   left: calc(50% - 374px);
-  bottom: 0;
-  top: 150px;
+  bottom: 700;
+  top: 700px;
 }
 
 /*--------------------------------------------------------------

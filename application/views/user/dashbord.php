@@ -94,17 +94,17 @@
         </button>
       </div>
       <div class="modal-body mx-3">
-        <div class="md-form mb-5">
+        <div class="md-form mb-1">
           <i class="fas fa-envelope prefix grey-text"></i>
           <label data-error="wrong" data-success="right" for="defaultForm-nik">NIK</label>
           <input type="integer" id="defaultForm-email" class="form-control validate">  
         </div>
-        <div class="md-form mb-4">
+        <div class="md-form mb-2">
           <i class="fas fa-lock prefix grey-text"></i>
           <label data-error="wrong" data-success="right" for="defaultForm-nama">Nama Lengkap</label>
           <input type="text" id="defaultForm-pass" class="form-control validate">
         </div>
-        <div class="md-form mb-5">
+        <div class="md-form mb-3">
           <i class="fas fa-envelope prefix grey-text"></i>
           <label data-error="wrong" data-success="right" for="defaultForm-tanggal">Tempat Tanggal & Lahir</label>
           <input type="text" id="defaultForm-email" class="form-control validate">  
@@ -119,10 +119,67 @@
           <label data-error="wrong" data-success="right" for="defaultForm-agama">Agama</label>
           <input type="text" id="defaultForm-email" class="form-control validate">  
         </div>
+        <div class="md-form mb-6">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-alamat">Alamat</label>
+          <input type="text" id="defaultForm-pass" class="form-control validate">
+        </div>
+        <div class="md-form mb-7">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-pk">Pekerjaan</label>
+          <input type="text" id="defaultForm-pass" class="form-control validate">
+        </div>
+        <div class="md-form mb-8">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-pr">Keperluan</label>
+          <input type="text" id="defaultForm-pass" class="form-control validate">
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-default">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="modalktpForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Data Pribadi</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-1">
+          <i class="fas fa-envelope prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-nama">Nama Lengkap</label>
+          <input type="email" id="defaultForm-email" class="form-control validate">
+        </div>
+
+        <div class="md-form mb-42">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-kk">No. Kartu Keluarga</label>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+        </div>
+        <div class="md-form mb-3">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-tgl">Tempat Tanggal & Lahir</label>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+        </div>
         <div class="md-form mb-4">
           <i class="fas fa-lock prefix grey-text"></i>
-          <label data-error="wrong" data-success="right" for="defaultForm-pass">Alamat</label>
-          <input type="text" id="defaultForm-pass" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="defaultForm-jk">Jenis Kelamin</label>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
+        </div>
+        <div class="md-form mb-5">
+          <i class="fas fa-lock prefix grey-text"></i>
+          <label data-error="wrong" data-success="right" for="defaultForm-alm">Alamat</label>
+          <input type="password" id="defaultForm-pass" class="form-control validate">
         </div>
 
       </div>
@@ -134,35 +191,6 @@
 </div>
 
 
-
-  <div class="modal fade" id="modaldomisiliForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body mx-3">
-          <div class="md-form mb-5">
-            <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="email" id="defaultForm-email" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
-          </div>
-
-          <div class="md-form mb-4">
-            <i class="fas fa-lock prefix grey-text"></i>
-            <input type="password" id="defaultForm-pass" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
-          </div>
-        </div>
-        <div class="modal-footer d-flex justify-content-center">
-          <button class="btn btn-default">Login</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -419,15 +447,16 @@
     </div>
 
     <div class="product-screens">
-
+      
       <div class="product-screen-1.5 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-        <img src="<?php echo base_url(''); ?>/vendor2/img/kayu.png" width="500px" alt="">
+        <img src="<?php echo base_url(''); ?>/vendor2/img/kayu.png" width="1350px" alt="">
       </div>
+      <p></p>
       <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-        <img src="<?php echo base_url(''); ?>/vendor2/img/jatim.png" width="119px" alt="">
+        <img src="<?php echo base_url(''); ?>/vendor2/img/jatim.png" width="160px" alt="">
       </div>
       <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-        <img src="<?php echo base_url(''); ?>/vendor2/img/bwi.png" width="90px" alt="">
+        <img src="<?php echo base_url(''); ?>/vendor2/img/bwi1.png" width="120px" alt="">
       </div>
 
     </div>
@@ -562,11 +591,11 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3 class="cta-title">Informasi Update</h3>
+            <p class="cta-text"> Segala informasi terbaru terkait kepentingan dan berhubungan dengan kebutuhan masyarakat Desa Yosomulyo, Gambiran, Banyuwangi.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <a class="cta-btn align-middle" href="#">Selengkapnya</a>
           </div>
         </div>
 
@@ -969,13 +998,19 @@
           <div class="copyright">
             Copyright &copy; 2019<strong>WebDesa</strong>. Kabupaten Banyuwangi
           </div </div> </div> <div class="col-lg-6">
-          <nav class="footer-links text-lg-right">
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-          </nav>
+          <div class="single-image text-right">
+          <img alt="Logo Polije" title="Logo Polije" width="50" height="50" data-src="https://id.wikipedia.org/wiki/Berkas:Lambang_propinsi_jatim.png" 
+              data-sizes="auto" class="lazyautosizes lazyloaded" src="https://upload.wikimedia.org/wikipedia/id/d/d7/Lambang_propinsi_jatim.png" sizes="50px">
+        
+          <img alt="Logo Polije" title="Logo Polije" width="50" height="50" data-src="https://upload.wikimedia.org/wikipedia/id/6/62/Logo_kab_Banyuwangi.png" 
+              data-sizes="auto" class="lazyautosizes lazyloaded" src="https://upload.wikimedia.org/wikipedia/id/6/62/Logo_kab_Banyuwangi.png" sizes="50px">
+          </div>
+      
         </div>
       </div>
     </div>
   </footer><!-- #footer -->
+  
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
