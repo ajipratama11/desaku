@@ -107,7 +107,7 @@ class dashbord extends CI_Controller
 		$tempatlahir = $this->input->post('tempatlahir');
 		$tgllahir = $this->input->post('tgllahir');
 		$agama = $this->input->post('agama');
-		$keperluan = $this->input->post('keperluan');
+		
 	
 		$data = array(
 			'nik' => $nik,
@@ -116,7 +116,7 @@ class dashbord extends CI_Controller
 			'tempatlahir' => $tempatlahir,
 			'tgllahir' => $tgllahir,
 			'agama' => $agama,
-			'keperluan' => $keperluan,
+			
 			
 		);
 		$this->M_data->add_akta($data, 'akta');
@@ -128,13 +128,14 @@ class dashbord extends CI_Controller
 
 	function add_surattanah()
 	{
+		
 		$nik = $this->input->post('nik');
 		$nama = $this->input->post('nama');
 		$alamat = $this->input->post('alamat');
 		$tempatlahir = $this->input->post('tempatlahir');
 		$tgllahir = $this->input->post('tgllahir');
-		$agama = $this->input->post('agama');
-		$keperluan = $this->input->post('keperluan');
+		$luas_tanah = $this->input->post('luas_tanah');
+		$harga_petak = $this->input->post('harga_petak');
 	
 		$data = array(
 			'nik' => $nik,
@@ -142,11 +143,11 @@ class dashbord extends CI_Controller
 			'alamat' => $alamat,
 			'tempatlahir' => $tempatlahir,
 			'tgllahir' => $tgllahir,
-			'agama' => $agama,
-			'keperluan' => $keperluan,
+			'luas_tanah' => $luas_tanah,
+			'harga_petak' => $harga_petak,
 			
 		);
-		$this->M_data->add_akta($data, 'akta');
+		$this->M_data->add_surattanah($data, 'surattanah');
 		echo "<script>
                 alert('Permintaan terkirim!');
                 </script>";
