@@ -228,8 +228,8 @@ h6 {
   position: absolute;
   z-index: 20;
   left: calc(50% - 374px);
-  bottom: 0;
-  top: 400px;
+  bottom: 700;
+  top: 700px;
 }
 
 /*--------------------------------------------------------------

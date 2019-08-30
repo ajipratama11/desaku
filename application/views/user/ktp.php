@@ -12,28 +12,28 @@
         <div class="md-form mb-1">
           <i class="fas fa-envelope prefix grey-text"></i>
           <label data-error="wrong" data-success="right" for="defaultForm-nama">Nama Lengkap</label>
-          <input type="email" id="defaultForm-email" class="form-control validate">
+          <input type="text" id="defaultForm-email" class="form-control validate">
         </div>
 
-        <div class="md-form mb-42">
+        <div class="md-form mb-2">
           <i class="fas fa-lock prefix grey-text"></i>
           <label data-error="wrong" data-success="right" for="defaultForm-kk">No. Kartu Keluarga</label>
-          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <input type="string" id="defaultForm-pass" class="form-control validate">
         </div>
         <div class="md-form mb-3">
           <i class="fas fa-lock prefix grey-text"></i>
           <label data-error="wrong" data-success="right" for="defaultForm-tgl">Tempat Tanggal & Lahir</label>
-          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <input type="string" id="defaultForm-pass" class="form-control validate">
         </div>
         <div class="md-form mb-4">
           <i class="fas fa-lock prefix grey-text"></i>
           <label data-error="wrong" data-success="right" for="defaultForm-jk">Jenis Kelamin</label>
-          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <input type="text" id="defaultForm-pass" class="form-control validate">
         </div>
         <div class="md-form mb-5">
           <i class="fas fa-lock prefix grey-text"></i>
           <label data-error="wrong" data-success="right" for="defaultForm-alm">Alamat</label>
-          <input type="password" id="defaultForm-pass" class="form-control validate">
+          <input type="text" id="defaultForm-pass" class="form-control validate">
         </div>
 
       </div>
