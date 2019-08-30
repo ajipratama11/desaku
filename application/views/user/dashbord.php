@@ -332,7 +332,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header text-center">
-          <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+          <h4 class="modal-title w-100 font-weight-bold">Pembuatan Akta Lahir</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -341,43 +341,44 @@
         <div class="modal-body mx-3">
           <div class="md-form mb-4">
             <i class="fas fa-envelope prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-email">NIK</label>
             <input type="number" id="nik" name="nik" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-email">Your NIK</label>
           </div>
           <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Nama Lengkap</label>
             <input type="text" id="nama" name="nama" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your NAMA</label>
           </div>
 
           <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Alamat</label>
             <input type="text" id="alamat" name="alamat" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your alamat</label>
           </div>
 
           <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Tempat & Tanggal Lahir</label>
             <input type="text" id="tempatlahir" name="tempatlahir" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your tempatlahir</label>
           </div>
 
           <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">No. Kartu Keluargar</label>
             <input type="date" id="tgllahir" name="tgllahir" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your tgllahir</label>
           </div>
 
           <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">No. Surat Nikah</label>
             <input type="text" id="agama" name="agama" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your agama</label>
           </div>
 
           <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Berkas Lainnya</label>
             <input type="text" id="keperluan" name="keperluan" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your keperluan</label>
+            
           </div>
         </div>
         <div class="modal-footer d-flex justify-content-center">
