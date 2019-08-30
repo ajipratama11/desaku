@@ -31,7 +31,7 @@
                 <tbody>
                     <?php
                     $no = 1;
-                    foreach ($akta as $i) {
+                    foreach ($surattanah as $i) {
                         ?>
                         <tr>
                             <th><?= $no++ ?></th>

@@ -34,7 +34,7 @@
                 <tbody>
                     <?php
                     $no = 1;
-                    foreach ($akta as $i) {
+                    foreach ($domisili as $i) {
                         ?>
                         <tr>
                             <th><?= $no++ ?></th>
