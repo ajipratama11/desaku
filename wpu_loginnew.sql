@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Agu 2019 pada 13.02
+-- Waktu pembuatan: 30 Agu 2019 pada 17.42
 -- Versi server: 10.1.31-MariaDB
 -- Versi PHP: 7.2.3
 
@@ -46,7 +46,70 @@ CREATE TABLE `akta` (
 INSERT INTO `akta` (`id_akta`, `nik`, `nama`, `alamat`, `tempatlahir`, `tgllahir`, `agama`, `keperluan`) VALUES
 (1, '121211313', 'Aji Pratama', 'SsSas', 'sSSAS', '2019-08-08', 'ADADAD', 'adda'),
 (2, '112123', 'Ajisdd', 'Ssdsd', 'sSSAS', '2019-08-08', 'ADADAD', 'adda'),
-(3, '968868668', 'ldad', 'nakjdn', 'ldla', '2019-08-15', 'kadlkad', 'dladnad');
+(3, '968868668', 'ldad', 'nakjdn', 'ldla', '2019-08-15', 'kadlkad', 'dladnad'),
+(5, '3511191312990001', 'Vania Larissa', 'Jl. Jawa 86 gg Bahagia N0. 17', 'Jember', '1999-12-13', 'Islam', 'Pembaruan Akta');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `sktm`
+--
+
+CREATE TABLE `sktm` (
+  `NIK` int(16) NOT NULL,
+  `Nama` varchar(20) NOT NULL,
+  `TTL` varchar(20) NOT NULL,
+  `Jenis_Kel` varchar(20) NOT NULL,
+  `Agama` varchar(20) NOT NULL,
+  `Alamat` varchar(25) NOT NULL,
+  `Pekerjaan` varchar(20) NOT NULL,
+  `Keperluan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `sktm`
+--
+
+INSERT INTO `sktm` (`NIK`, `Nama`, `TTL`, `Jenis_Kel`, `Agama`, `Alamat`, `Pekerjaan`, `Keperluan`) VALUES
+(3247572, 'Vania Larissa Dina', 'Jember, 12 Mei 2018', 'Perempuan', 'Islam', 'jl. Mastrip', 'mahasiswi', 'mau kulian jauh'),
+(0, '', '', 'Perempuan', '', '', 'Taruni', ''),
+(0, '', '', '', '', '', '', ''),
+(0, '', '', '', '', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `surat_domisili`
+--
+
+CREATE TABLE `surat_domisili` (
+  `NIK` int(16) NOT NULL,
+  `Nama` varchar(20) NOT NULL,
+  `Jenis_kelamin` varchar(20) NOT NULL,
+  `Tempatlahir` varchar(20) NOT NULL,
+  `Tgllahir` date NOT NULL,
+  `Agama` varchar(20) NOT NULL,
+  `Pekerjaan` varchar(20) NOT NULL,
+  `Alamat_lama` varchar(20) NOT NULL,
+  `Alamat_baru` varchar(20) NOT NULL,
+  `Keperluan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `surat_tanah`
+--
+
+CREATE TABLE `surat_tanah` (
+  `NIK` int(16) NOT NULL,
+  `Nama` varchar(20) NOT NULL,
+  `Alamat` varchar(20) NOT NULL,
+  `Tempatlahir` varchar(20) NOT NULL,
+  `tgllahir` date NOT NULL,
+  `luas_tanah` varchar(20) NOT NULL,
+  `harga_petak` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -243,7 +306,7 @@ ALTER TABLE `user_token`
 -- AUTO_INCREMENT untuk tabel `akta`
 --
 ALTER TABLE `akta`
-  MODIFY `id_akta` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_akta` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`

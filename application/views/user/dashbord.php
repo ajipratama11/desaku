@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<link rel="icon" type="vendor2/img/png" href="vendor2/img/bwi1.png">
   <meta charset="utf-8">
   <title>SI - DESAKU</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -81,7 +82,75 @@
     </div>
   </header><!-- #header -->
 
-
+  <div class="modal fade" id="modalsuratdomisiliForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h4 class="modal-title w-100 font-weight-bold">Surat Domisili</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <?= form_open_multipart('dashbord/add_sktm'); ?>
+        <div class="modal-body mx-3">
+          <div class="md-form mb-1">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-nik">NIK</label>
+            <input type="number" name="nik" id="defaultForm-email" class="form-control validate">
+          </div>
+          <div class="md-form mb-2">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-nama">Nama Lengkap</label>
+            <input type="text" name="nama" id="defaultForm-pass" class="form-control validate">
+          </div>
+          <div class="md-form mb-3">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pr">Jenis Kelamin</label>
+            <input type="text" name="jenis_kelamin" id="defaultForm-pass" class="form-control validate">
+          </div>
+          <div class="md-form mb-4">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-tanggal">Tempat Lahir</label>
+            <input type="text" name="tempatlahir" id="defaultForm-email" class="form-control validate">
+          </div>
+          <div class="md-form mb-5">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-jk">Tanggal Lahir</label>
+            <input type="text" name="tgllahir" id="defaultForm-pass" class="form-control validate">
+          </div>
+          <div class="md-form mb-6">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-agama">Agama</label>
+            <input type="text" name="agama" id="defaultForm-email" class="form-control validate">
+          </div>
+          <div class="md-form mb-7">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pk">Pekerjaan</label>
+            <input type="text" name="pekerjaan" id="defaultForm-pass" class="form-control validate">
+          </div>
+          <div class="md-form mb-8">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pr">Alamat Lama</label>
+            <input type="text" name="alamat_lama" id="defaultForm-pass" class="form-control validate">
+          </div>
+          <div class="md-form mb-9">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pr">Alamat Baru</label>
+            <input type="text" name="alamat_baru" id="defaultForm-pass" class="form-control validate">
+          </div>
+          <div class="md-form mb-10">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pr">Keperluan</label>
+            <input type="text" name="keperluan" id="defaultForm-pass" class="form-control validate">
+          </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+        <? form_close(); ?>
+      </div>
+    </div>
+  </div>
 
   <div class="modal fade" id="modalsktmForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -297,16 +366,46 @@
         </div>
         <?= form_open_multipart('dashbord/add_surattanah'); ?>
         <div class="modal-body mx-3">
-          <div class="md-form mb-5">
+        <div class="md-form mb-1">
             <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="email" id="defaultForm-email" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+            <label data-error="wrong" data-success="right" for="defaultForm-email">NIK</label>
+            <input type="number" id="nik" name="nik" class="form-control validate">
+          </div>
+          <div class="md-form mb-2">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" class="form-control validate">
+          </div>
+
+          <div class="md-form mb-3">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Alamat</label>
+            <input type="text" id="alamat" name="alamat" class="form-control validate">
           </div>
 
           <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
-            <input type="password" id="defaultForm-pass" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Tempat Lahir</label>
+            <input type="text" id="tempatlahir" name="tempatlahir" class="form-control validate">
+          </div>
+
+          <div class="md-form mb-5">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Tanggal Lahir</label>
+            <input type="date" id="tgllahir" name="tgllahir" class="form-control validate">
+          </div>
+
+          <div class="md-form mb-6">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Luas Tanah</label>
+            <input type="text" id="agama" name="luas_tanah" class="form-control validate">
+          </div>
+
+          <div class="md-form mb-7">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="defaultForm-pass">Harga Petak</label>
+            <input type="text" id="keperluan" name="harga_petak" class="form-control validate">
+            
           </div>
         </div>
         <div class="modal-footer d-flex justify-content-center">
@@ -318,36 +417,6 @@
   </div>
 
 
-  <div class="modal fade" id="modaldomisiliForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h4 class="modal-title w-100 font-weight-bold">Surat Domisili</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <?= form_open_multipart('dashbord/add_domisili'); ?>
-        <div class="modal-body mx-3">
-          <div class="md-form mb-5">
-            <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="email" id="defaultForm-email" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
-          </div>
-
-          <div class="md-form mb-4">
-            <i class="fas fa-lock prefix grey-text"></i>
-            <input type="password" id="defaultForm-pass" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
-          </div>
-        </div>
-        <div class="modal-footer d-flex justify-content-center">
-          <button type="submit" class="btn btn-default">Login</button>
-        </div>
-        <? form_close(); ?>
-      </div>
-    </div>
-  </div>
 
   <div class="modal fade" id="modalpengantarpindahForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -473,10 +542,10 @@
       </div>
       <p></p>
       <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-        <img src="<?php echo base_url(''); ?>/vendor2/img/jatim.png" width="160px" alt="">
+        <img src="<?php echo base_url(''); ?>/vendor2/img/jatim.png" width="195px" alt="">
       </div>
       <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-        <img src="<?php echo base_url(''); ?>/vendor2/img/bwi1.png" width="120px" alt="">
+        <img src="<?php echo base_url(''); ?>/vendor2/img/bwi1.png" width="140px" alt="">
       </div>
 
     </div>

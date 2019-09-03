@@ -156,7 +156,7 @@ class dashbord extends CI_Controller
 			'keperluan' => $keperluan,
 			
 		);
-		$this->M_data->add_kk($data, 'kk');
+		$this->M_data->add_akta($data, 'akta');
 		echo "<script>
 		alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
@@ -171,7 +171,7 @@ class dashbord extends CI_Controller
 		$tempatlahir = $this->input->post('tempatlahir');
 		$tgllahir = $this->input->post('tgllahir');
 		$agama = $this->input->post('agama');
-		$keperluan = $this->input->post('keperluan');
+		
 	
 		$data = array(
 			'nik' => $nik,
@@ -180,10 +180,10 @@ class dashbord extends CI_Controller
 			'tempatlahir' => $tempatlahir,
 			'tgllahir' => $tgllahir,
 			'agama' => $agama,
-			'keperluan' => $keperluan,
+			
 			
 		);
-		$this->M_data->add_ktp($data, 'ktp');
+		$this->M_data->add_akta($data, 'akta');
 		echo "<script>
 		alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
@@ -192,13 +192,14 @@ class dashbord extends CI_Controller
 
 	function add_surattanah()
 	{
+		
 		$nik = $this->input->post('nik');
 		$nama = $this->input->post('nama');
 		$alamat = $this->input->post('alamat');
 		$tempatlahir = $this->input->post('tempatlahir');
 		$tgllahir = $this->input->post('tgllahir');
-		$agama = $this->input->post('agama');
-		$keperluan = $this->input->post('keperluan');
+		$luas_tanah = $this->input->post('luas_tanah');
+		$harga_petak = $this->input->post('harga_petak');
 	
 		$data = array(
 			'nik' => $nik,
@@ -206,8 +207,8 @@ class dashbord extends CI_Controller
 			'alamat' => $alamat,
 			'tempatlahir' => $tempatlahir,
 			'tgllahir' => $tgllahir,
-			'agama' => $agama,
-			'keperluan' => $keperluan,
+			'luas_tanah' => $luas_tanah,
+			'harga_petak' => $harga_petak,
 			
 		);
 		$this->M_data->add_surattanah($data, 'surattanah');
@@ -299,26 +300,58 @@ class dashbord extends CI_Controller
 	{
 		$nik = $this->input->post('nik');
 		$nama = $this->input->post('nama');
-		$alamat = $this->input->post('alamat');
+		$jenis_kelamin = $this->input->post('jenis_kelamin');
 		$tempatlahir = $this->input->post('tempatlahir');
 		$tgllahir = $this->input->post('tgllahir');
 		$agama = $this->input->post('agama');
+		$pekerjaan = $this->input->post('pekerjaan');
+		$alamat_lama = $this->input->post('alamat_lama');
+		$alamat_baru = $this->input->post('alamat_baru');
 		$keperluan = $this->input->post('keperluan');
 	
 		$data = array(
 			'nik' => $nik,
 			'nama' => $nama,
-			'alamat' => $alamat,
+			'jenis_kelamin' => $jenis_kelamin,
 			'tempatlahir' => $tempatlahir,
 			'tgllahir' => $tgllahir,
 			'agama' => $agama,
+			'pekerjaan' => $pekerjaan,
+			'alamat_lama' => $alamat_lama,
+			'alamat_baru' => $alamat_baru,
 			'keperluan' => $keperluan,
 			
 		);
-		$this->M_data->add_pengantarcerai($data, 'pengantarcerai');
+		$this->M_data->add_suratdomisili($data, 'suratdomisili');
 		echo "<script>
 		alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
+}
+function add_suratpengantarpindah()
+{
+	$nik = $this->input->post('nik');
+	$nama = $this->input->post('nama');
+	$alamat = $this->input->post('alamat');
+	$tempatlahir = $this->input->post('tempatlahir');
+	$tgllahir = $this->input->post('tgllahir');
+	$agama = $this->input->post('agama');
+	$keperluan = $this->input->post('keperluan');
+
+	$data = array(
+		'nik' => $nik,
+		'nama' => $nama,
+		'alamat' => $alamat,
+		'tempatlahir' => $tempatlahir,
+		'tgllahir' => $tgllahir,
+		'agama' => $agama,
+		'keperluan' => $keperluan,
+		
+	);
+	$this->M_data->add_akta($data, 'akta');
+	echo "<script>
+			alert('Permintaan terkirim!');
+			</script>";
+	echo '<script>window.location="index";</script>';
 }

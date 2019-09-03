@@ -23,8 +23,8 @@
                         <th>Alamat</th>
                         <th>Tempat Lahir</th>
                         <th>Tanggal Lahir</th>
-                        <th>Agama</th>
-                        <th>Kepeluan</th>
+                        <th>Luas Tanah</th>
+                        <th>Harga Petak</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -40,8 +40,8 @@
                             <td><?= $i->alamat ?></td>
                             <td><?= $i->tempatlahir ?></td>
                             <td><?= $i->tgllahir ?></td>
-                            <td><?= $i->agama ?></td>
-                            <td><?= $i->keperluan ?></td>
+                            <td><?= $i->luas_tanah ?></td>
+                            <td><?= $i->harga_petak ?></td>
                             <td><button class="btn btn-danger btn-round">Hapus</button></td>
                         </tr>
                     <?php

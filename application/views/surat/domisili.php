@@ -20,10 +20,13 @@
                         <th>No</th>
                         <th>NIK</th>
                         <th>Nama</th>
-                        <th>Alamat</th>
+                        <th>Jenis Kelamin</th>
                         <th>Tempat Lahir</th>
                         <th>Tanggal Lahir</th>
                         <th>Agama</th>
+                        <th>Pekerjaan</th>
+                        <th>Alamat Lama</th>
+                        <th>Alamat Baru</th>
                         <th>Kepeluan</th>
                         <th>Action</th>
                     </tr>
@@ -37,10 +40,13 @@
                             <th><?= $no++ ?></th>
                             <td><?= $i->nik ?></td>
                             <td><?= $i->nama ?></td>
-                            <td><?= $i->alamat ?></td>
+                            <td><?= $i->jenis_kelamin ?></td>
                             <td><?= $i->tempatlahir ?></td>
                             <td><?= $i->tgllahir ?></td>
                             <td><?= $i->agama ?></td>
+                            <td><?= $i->pekerjaan ?></td>
+                            <td><?= $i->alamat_lama ?></td>
+                            <td><?= $i->alamat_baru ?></td>
                             <td><?= $i->keperluan ?></td>
                             <td><button class="btn btn-danger btn-round">Hapus</button></td>
                         </tr>
