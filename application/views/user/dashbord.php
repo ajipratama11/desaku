@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<link rel="icon" type="vendor2/img/png" href="vendor2/img/bwi1.png">
+  <link rel="icon" type="vendor2/img/png" href="vendor2/img/bwi1.png">
   <meta charset="utf-8">
   <title>SI - DESAKU</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -298,7 +298,7 @@
         </div>
         <?= form_open_multipart('dashbord/add_surattanah'); ?>
         <div class="modal-body mx-3">
-        <div class="md-form mb-1">
+          <div class="md-form mb-1">
             <i class="fas fa-envelope prefix grey-text"></i>
             <label data-error="wrong" data-success="right" for="defaultForm-email">NIK</label>
             <input type="number" id="nik" name="nik" class="form-control validate">
@@ -337,7 +337,7 @@
             <i class="fas fa-lock prefix grey-text"></i>
             <label data-error="wrong" data-success="right" for="defaultForm-pass">Harga Petak</label>
             <input type="text" id="keperluan" name="harga_petak" class="form-control validate">
-            
+
           </div>
         </div>
         <div class="modal-footer d-flex justify-content-center">
@@ -486,9 +486,7 @@
 
   <main id="main">
 
-    <!--==========================
-      About Us Section
-    ============================-->
+    <!--========================== About Us Section ============================-->
     <section id="about" class="section-bg">
       <div class="container-fluid">
         <div class="section-header">
@@ -519,13 +517,11 @@
               <li><i class="ion-android-checkmark-circle"></i>Dusun Sidorejo Wetan.</li>
               <li><i class="ion-android-checkmark-circle"></i>Dusun Sidotentrem.</li>
             </ul>
-
-
           </div>
         </div>
-
       </div>
-    </section><!-- #about -->
+    </section>
+    <!-- #about -->
 
     <!--==========================
       Product Featuress Section
@@ -616,7 +612,7 @@
             <p class="cta-text"> Segala informasi terbaru terkait kepentingan dan berhubungan dengan kebutuhan masyarakat Desa Yosomulyo, Gambiran, Banyuwangi.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Selengkapnya</a>
+            <a class="cta-btn align-middle" href="<?= base_url('User/informasiupdate'); ?>">Selengkapnya</a>
           </div>
         </div>
 
@@ -640,7 +636,7 @@
           <div class="col-lg-6">
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="ion-ios-stopwatch-outline"></i></div>
-              <h4 class="title"><a href="">Kerja Bakti</a></h4>
+              <h4 class="title"><a href="<?= base_url('User/kerjabakti'); ?>">Kerja Bakti</a></h4>
               <p class="description">Kerja bakti desa mewajibkan warganya setiap RT untuk membersihkan lingkugan sekitar dan umum.</p>
             </div>
           </div>
@@ -648,7 +644,7 @@
           <div class="col-lg-6">
             <div class="box wow fadeInRight">
               <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-              <h4 class="title"><a href="">Kegiatan Bulanan</a></h4>
+              <h4 class="title"><a href="<?= base_url('User/kegiatanbulanan'); ?>">Kegiatan Bulanan</a></h4>
               <p class="description">Agenda dan evaluasi pelaksanaan program desa serta situasi dan kondisi desa.</p>
             </div>
           </div>
@@ -656,7 +652,7 @@
           <div class="col-lg-6">
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="ion-ios-heart-outline"></i></div>
-              <h4 class="title"><a href="">Musyawarah</a></h4>
+              <h4 class="title"><a href="<?= base_url('User/musyawarah'); ?>">Musyawarah</a></h4>
               <p class="description">Dilakukan setiap pengadaan agenda acara atau even yang berhubungan dengan waktu dan tempat desa.</p>
             </div>
           </div>
@@ -664,7 +660,7 @@
           <div class="col-lg-6">
             <div class="box wow fadeInRight">
               <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-              <h4 class="title"><a href="">Karang Taruna</a></h4>
+              <h4 class="title"><a href="<?= base_url('User/karangtaruna'); ?>">Karang Taruna</a></h4>
               <p class="description">Kegiatan mingguan untuk meningkatkan kemampuan minat bakat dan membangun inovasi desa</p>
             </div>
           </div>
@@ -735,7 +731,7 @@
 
 
               </ul>
-              <a href="#" class="get-started-btn">Get Started</a>
+              <!-- <a href="#" class="get-started-btn">Get Started</a> -->
             </div>
           </div>
 
@@ -750,7 +746,7 @@
                 <li><i class="ion-android-checkmark-circle"></i> Mendongkrak Perekonomian Desa</li>
                 <li><i class="ion-android-checkmark-circle"></i> Menjadikan Cipta Desa Wisata</li>
               </ul>
-              <a href="#" class="get-started-btn">Get Started</a>
+              <!-- <a href="#" class="get-started-btn">Get Started</a> -->
             </div>
           </div>
 
@@ -765,7 +761,7 @@
                 <li><i class="ion-android-checkmark-circle"></i> Sarana pertolongan Pertama</li>
                 <li><i class="ion-android-checkmark-circle"></i> Jaminan mayarakat kurang mampu </li>
               </ul>
-              <a href="#" class="get-started-btn">Get Started</a>
+              <!-- <a href="#" class="get-started-btn">Get Started</a> -->
             </div>
           </div>
 

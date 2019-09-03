@@ -7,15 +7,12 @@ class dashbord extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('M_data');
-	
 	}
-
 	public function index()
 	{
-	
 		$this->load->view('user/dashbord');
-		
 	}
+
 	function add_akta()
 	{
 		$nik = $this->input->post('nik');
@@ -42,7 +39,6 @@ class dashbord extends CI_Controller
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
-
 
 	public function inputsktm()
     {
@@ -117,7 +113,6 @@ class dashbord extends CI_Controller
 		$alamat = $this->input->post('alamat');
 		$pekerjaan = $this->input->post('pekerjaan');
 		$keperluan = $this->input->post('keperluan');
-	
 		$data = array(
 			'nik' => $nik,
 			'nama' => $nama,
@@ -127,7 +122,6 @@ class dashbord extends CI_Controller
 			'alamat' => $alamat,
 			'pekerjaan' => $pekerjaan,
 			'keperluan' => $keperluan,
-			
 		);
 		$this->M_data->add_sktm($data, 'sktm');
 		echo "<script>
@@ -135,7 +129,6 @@ class dashbord extends CI_Controller
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
-
 	function add_kk()
 	{
 		$nik = $this->input->post('nik');
@@ -145,7 +138,6 @@ class dashbord extends CI_Controller
 		$tgllahir = $this->input->post('tgllahir');
 		$agama = $this->input->post('agama');
 		$keperluan = $this->input->post('keperluan');
-	
 		$data = array(
 			'nik' => $nik,
 			'nama' => $nama,
@@ -154,7 +146,6 @@ class dashbord extends CI_Controller
 			'tgllahir' => $tgllahir,
 			'agama' => $agama,
 			'keperluan' => $keperluan,
-			
 		);
 		$this->M_data->add_akta($data, 'akta');
 		echo "<script>
@@ -162,7 +153,6 @@ class dashbord extends CI_Controller
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
-
 	function add_ktp()
 	{
 		$nik = $this->input->post('nik');
