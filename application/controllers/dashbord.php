@@ -108,7 +108,7 @@ class dashbord extends CI_Controller
 		$nik = $this->input->post('nik');
 		$nama = $this->input->post('nama');
 		$ttl = $this->input->post('ttl');
-		$jenis_kel = $this->input->post('jenis_kel');
+		$jenis_kelamin = $this->input->post('jenis_kelamin');
 		$agama = $this->input->post('agama');
 		$alamat = $this->input->post('alamat');
 		$pekerjaan = $this->input->post('pekerjaan');
@@ -117,7 +117,7 @@ class dashbord extends CI_Controller
 			'nik' => $nik,
 			'nama' => $nama,
 			'ttl' => $ttl,
-			'jenis_kel' => $jenis_kel,
+			'jenis_kelamin' => $jenis_kelamin,
 			'agama' => $agama,
 			'alamat' => $alamat,
 			'pekerjaan' => $pekerjaan,
@@ -212,20 +212,24 @@ class dashbord extends CI_Controller
 	{
 		$nik = $this->input->post('nik');
 		$nama = $this->input->post('nama');
-		$alamat = $this->input->post('alamat');
-		$tempatlahir = $this->input->post('tempatlahir');
-		$tgllahir = $this->input->post('tgllahir');
+		$ttl = $this->input->post('ttl');
+		$jenis_kelamin = $this->input->post('jenis_kelamin');
+		$pekerjaan = $this->input->post('pekerjaan');
 		$agama = $this->input->post('agama');
-		$keperluan = $this->input->post('keperluan');
+		$status_perkawinan= $this->input->post('status_perkawinan');
+		$kewarganegaraan = $this->input->post('kewarganegaraan');
+		$alamat = $this->input->post('alamat');
 	
 		$data = array(
 			'nik' => $nik,
 			'nama' => $nama,
-			'alamat' => $alamat,
-			'tempatlahir' => $tempatlahir,
-			'tgllahir' => $tgllahir,
+			'ttl' => $ttl,
+			'jenis_kelamin' => $jenis_kelamin,
+			'pekerjaan' => $pekerjaan,
 			'agama' => $agama,
-			'keperluan' => $keperluan,
+			'status_perkawinan' => $status_perkawinan,
+			'kewarganegaraan' => $kewarganegaraan,
+			'alamat' => $alamat,
 		);
 		$this->M_data->add_domisili($data, 'domisili');
 		echo "<script>

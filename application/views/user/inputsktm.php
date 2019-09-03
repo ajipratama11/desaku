@@ -13,40 +13,36 @@
             <!-- <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#newMenuModal">Add New Menu</a> -->
 
             <div class="modal-header text-center">
-                <h4 class="modal-title w-100 font-weight-bold">Pembuatan Akta Lahir</h4>
+                <h4 class="modal-title w-100 font-weight-bold">Pembuatan Surat Keterangan Tidak Mampu</h4>
 
             </div>
-            <?= form_open_multipart('dashbord/add_akta'); ?>
+            <?= form_open_multipart('dashbord/add_sktm'); ?>
             <div class="modal-body mx-3">
+                <div class="md-form mb-3">
+                    <i class="fas fa-lock prefix grey-text"></i>
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Nama</label>
+                    <input type="text" id="nama" name="nama" class="form-control validate">
+                </div>
+                <div class="md-form mb-3">
+                    <i class="fas fa-lock prefix grey-text"></i>
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Tempat & Tanggal Lahir</label>
+                    <input type="text" id="ttl" name="ttl" class="form-control validate">
+                </div>
+                <div class="md-form mb-3">
+                    <i class="fas fa-lock prefix grey-text"></i>
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Jenis Kelamin</label>
+                    <!-- <input type="text" id="agama" name="agama" class=""> -->
+                    <select class="form-control validate" id="Jenis_kelamin" name="jenis_kelamin">
+                        <option selected>Pilih..</option>
+                        <option value="l">Laki-laki</option>
+                        <option value="p">Perempuan</option>
+                    </select>
+                </div>
                 <div class="md-form mb-3">
                     <i class="fas fa-envelope prefix grey-text"></i>
                     <label data-error="wrong" data-success="right" for="defaultForm-email">NIK</label>
                     <input type="number" id="nik" name="nik" class="form-control validate">
                 </div>
-                <div class="md-form mb-3">
-                    <i class="fas fa-lock prefix grey-text"></i>
-                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Nama Lengkap</label>
-                    <input type="text" id="nama" name="nama" class="form-control validate">
-                </div>
-
-                <div class="md-form mb-3">
-                    <i class="fas fa-lock prefix grey-text"></i>
-                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Alamat</label>
-                    <input type="text" id="alamat" name="alamat" class="form-control validate">
-                </div>
-
-                <div class="md-form mb-3">
-                    <i class="fas fa-lock prefix grey-text"></i>
-                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Tempat Lahir</label>
-                    <input type="text" id="tempatlahir" name="tempatlahir" class="form-control validate">
-                </div>
-
-                <div class="md-form mb-3">
-                    <i class="fas fa-lock prefix grey-text"></i>
-                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Tanggal Lahir</label>
-                    <input type="date" id="tgllahir" name="tgllahir" class="form-control validate">
-                </div>
-
                 <div class="md-form mb-3">
                     <i class="fas fa-lock prefix grey-text"></i>
                     <label data-error="wrong" data-success="right" for="defaultForm-pass">Agama</label>
@@ -62,12 +58,20 @@
                         <option value="lain-lain">lain-lain</option>
                     </select>
                 </div>
-
+                <div class="md-form mb-3">
+                    <i class="fas fa-lock prefix grey-text"></i>
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Pekerjaan</label>
+                    <input type="text" id="pekerjaan" name="pekerjaan" class="form-control validate">
+                </div>
+                <div class="md-form mb-3">
+                    <i class="fas fa-lock prefix grey-text"></i>
+                    <label data-error="wrong" data-success="right" for="defaultForm-pass">Alamat</label>
+                    <input type="text" id="alamat" name="alamat" class="form-control validate">
+                </div>
                 <div class="md-form mb-3">
                     <i class="fas fa-lock prefix grey-text"></i>
                     <label data-error="wrong" data-success="right" for="defaultForm-pass">Keperluan</label>
                     <input type="text" id="keperluan" name="keperluan" class="form-control validate">
-
                 </div>
             </div>
             <div class="modal-footer d-flex justify-content-center">
