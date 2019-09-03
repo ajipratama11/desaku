@@ -16,7 +16,9 @@
           <div class="col-lg-6 content wow fadeInRight">
             <h3>Kabar Bahagia bagi para ibu rumah tangga</h3>
             <p>
-              Dulu desa ini bernama Karangasem. Nama itu diberikan karena dulu banyak sekali pohon asam di sana. Desa ini pada zaman PKI Di anggap tempat basis PKI di Banyuwangi sehingga sangat ditakuti di seluruh Banyuwangi. Orang-orang Yosomulyo terkenal kesaktiannya. Hal itu terbukti saat orang Yosomulyo bentrok dengan orang ANSOR Muncar. Bentrokan ini bermula dari orang-orang NU dari Muncar yang merencanakan penyerangan di Yosomulyo untuk menumpas PKI.
+            Inovasi baru dari warga dusun Yosomulyo, Kecamatan Gambiran Banyuwangi. Hasil rotan dari kayu jati dapat dimanfaatkan sebagai salah satau kerajinan rumah tanga yang dapat menjadi
+            salah satu pemasukan ekonomi warga. Hal ini ke depannya dapa dikembangkan dan dapat dijadikan sebagai salah satu Usaha Mikro Kecil Menengah atau UMKM sebagai wujud untuk pendongkrak
+            ekonomi warga sekitar untuk tetap dan selalu berinovasi.
             </p>
             <h5>Pembagian Kelompok UMKM</h5>
             <ul>
