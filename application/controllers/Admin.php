@@ -21,7 +21,6 @@ class Admin extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-
     public function role()
     {
         $data['title'] = 'Role';
@@ -75,9 +74,4 @@ class Admin extends CI_Controller
 
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Access Changed!</div>');
     }
-
-    
-    
-
-    
 }

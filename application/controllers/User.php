@@ -233,4 +233,11 @@ class User extends CI_Controller
         $this->load->view('pembuatan/surattanah', $data);
         $this->load->view('templates/footer');
     }
+
+    public function confirm_pesan($id)
+    {
+        $data["status_proses"] = 'Proses Tahap Desain Atau Perbaikan Gambar';
+        $this->Transaksi_model->confirm($data, $id);
+        redirect('penerimapesan');
+    }
 }
