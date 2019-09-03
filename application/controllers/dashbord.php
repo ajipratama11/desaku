@@ -317,8 +317,7 @@ class dashbord extends CI_Controller
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
-}
-function add_suratpengantarpindah()
+	function add_suratpengantarpindah()
 {
 	$nik = $this->input->post('nik');
 	$nama = $this->input->post('nama');
@@ -344,3 +343,49 @@ function add_suratpengantarpindah()
 			</script>";
 	echo '<script>window.location="index";</script>';
 }
+	public function informasiupdate()
+    {
+        $data['title'] = "Update Informasi";
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/informasiupdate');
+        $this->load->view('templates/footer');
+    }
+
+    public function kerjabakti()
+    {
+        $data['title'] = "Kerja Bakti";
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/kerjabakti');
+        $this->load->view('templates/footer');
+    }
+
+    public function musyawarah()
+    {
+        $data['title'] = "Musyawarah";
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/musyawarah');
+        $this->load->view('templates/footer');
+    }
+
+    public function kegiatanbulanan()
+    {
+        $data['title'] = "Kegiatan Bulanan";
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/kegiatanbulanan');
+        $this->load->view('templates/footer');
+    }
+
+    public function karangtaruna()
+    {
+        $data['title'] = "Karang Taruna";
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/karangtaruna');
+        $this->load->view('templates/footer');
+    }
+}
+

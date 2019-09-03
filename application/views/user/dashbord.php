@@ -680,7 +680,7 @@
             <p class="cta-text"> Segala informasi terbaru terkait kepentingan dan berhubungan dengan kebutuhan masyarakat Desa Yosomulyo, Gambiran, Banyuwangi.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="<?= base_url('User/informasiupdate'); ?>">Selengkapnya</a>
+            <a class="cta-btn align-middle" href="<?= base_url('dashbord/informasiupdate'); ?>">Selengkapnya</a>
           </div>
         </div>
 
@@ -704,7 +704,7 @@
           <div class="col-lg-6">
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="ion-ios-stopwatch-outline"></i></div>
-              <h4 class="title"><a href="<?= base_url('User/kerjabakti'); ?>">Kerja Bakti</a></h4>
+              <h4 class="title"><a href="<?= base_url('dashbord/kerjabakti'); ?>">Kerja Bakti</a></h4>
               <p class="description">Kerja bakti desa mewajibkan warganya setiap RT untuk membersihkan lingkugan sekitar dan umum.</p>
             </div>
           </div>
@@ -712,7 +712,7 @@
           <div class="col-lg-6">
             <div class="box wow fadeInRight">
               <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-              <h4 class="title"><a href="<?= base_url('User/kegiatanbulanan'); ?>">Kegiatan Bulanan</a></h4>
+              <h4 class="title"><a href="<?= base_url('dashbord/kegiatanbulanan'); ?>">Kegiatan Bulanan</a></h4>
               <p class="description">Agenda dan evaluasi pelaksanaan program desa serta situasi dan kondisi desa.</p>
             </div>
           </div>
@@ -720,7 +720,7 @@
           <div class="col-lg-6">
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="ion-ios-heart-outline"></i></div>
-              <h4 class="title"><a href="<?= base_url('User/musyawarah'); ?>">Musyawarah</a></h4>
+              <h4 class="title"><a href="<?= base_url('dashbord/musyawarah'); ?>">Musyawarah</a></h4>
               <p class="description">Dilakukan setiap pengadaan agenda acara atau even yang berhubungan dengan waktu dan tempat desa.</p>
             </div>
           </div>
@@ -728,7 +728,7 @@
           <div class="col-lg-6">
             <div class="box wow fadeInRight">
               <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-              <h4 class="title"><a href="<?= base_url('User/karangtaruna'); ?>">Karang Taruna</a></h4>
+              <h4 class="title"><a href="<?= base_url('dashbord/karangtaruna'); ?>">Karang Taruna</a></h4>
               <p class="description">Kegiatan mingguan untuk meningkatkan kemampuan minat bakat dan membangun inovasi desa</p>
             </div>
           </div>
