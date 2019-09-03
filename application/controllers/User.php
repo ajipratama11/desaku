@@ -162,7 +162,7 @@ class User extends CI_Controller
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
-        $this->load->view('pembuatan/sktm', $data);
+        $this->load->view('user/inputsktm', $data);
         $this->load->view('templates/footer');
     }
 
@@ -176,7 +176,7 @@ class User extends CI_Controller
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);
         $this->load->view('templates/topbar', $data);
-        $this->load->view('surat/domisili', $data);
+        $this->load->view('user/inputdomisili', $data);
         $this->load->view('templates/footer');
     }
     public function pengantarpindah()

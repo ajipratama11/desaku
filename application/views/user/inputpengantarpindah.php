@@ -13,7 +13,7 @@
             <!-- <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#newMenuModal">Add New Menu</a> -->
 
             <div class="modal-header text-center">
-                <h4 class="modal-title w-100 font-weight-bold">Pembuatan Akta Lahir</h4>
+                <h4 class="modal-title w-100 font-weight-bold">Pembuatan Pengantar Pindah</h4>
 
             </div>
             <?= form_open_multipart('dashbord/add_akta'); ?>
