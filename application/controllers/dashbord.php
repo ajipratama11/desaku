@@ -38,11 +38,75 @@ class dashbord extends CI_Controller
 		);
 		$this->M_data->add_akta($data, 'akta');
 		echo "<script>
-                alert('Permintaan terkirim!');
+                alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
 
+
+	public function inputsktm()
+    {
+        $this->load->view('templates/header' );
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/inputsktm');
+        $this->load->view('templates/footer');
+    }
+	public function inputkk()
+    {
+        $this->load->view('templates/header' );
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/inputkk');
+        $this->load->view('templates/footer');
+	}
+	public function inputktp()
+    {
+        $this->load->view('templates/header' );
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/inputktp');
+        $this->load->view('templates/footer');
+	}
+	public function inputakta()
+    {
+        $this->load->view('templates/header' );
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/inputakta');
+        $this->load->view('templates/footer');
+	}
+	public function inputsurattanah()
+    {
+        $this->load->view('templates/header' );
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/inputakta');
+        $this->load->view('templates/footer');
+	}
+	public function inputdomisili()
+    {
+        $this->load->view('templates/header' );
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/inputdomisili');
+        $this->load->view('templates/footer');
+	}
+	public function inputpengantarpindah()
+    {
+        $this->load->view('templates/header' );
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/inputpengantarpindah');
+        $this->load->view('templates/footer');
+	}
+	public function inputpengantarnikah()
+    {
+        $this->load->view('templates/header' );
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/inputpengantarnikah');
+        $this->load->view('templates/footer');
+	}
+	public function inputpengantarcerai()
+    {
+        $this->load->view('templates/header' );
+        $this->load->view('templates/input_topbar');
+        $this->load->view('user/inputpengantarcerai');
+        $this->load->view('templates/footer');
+    }
 	function add_sktm()
 	{
 		$nik = $this->input->post('nik');
@@ -67,7 +131,7 @@ class dashbord extends CI_Controller
 		);
 		$this->M_data->add_sktm($data, 'sktm');
 		echo "<script>
-                alert('Permintaan terkirim!');
+		alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
@@ -94,7 +158,7 @@ class dashbord extends CI_Controller
 		);
 		$this->M_data->add_kk($data, 'kk');
 		echo "<script>
-                alert('Permintaan terkirim!');
+		alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
@@ -121,7 +185,7 @@ class dashbord extends CI_Controller
 		);
 		$this->M_data->add_ktp($data, 'ktp');
 		echo "<script>
-                alert('Permintaan terkirim!');
+		alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
@@ -148,7 +212,7 @@ class dashbord extends CI_Controller
 		);
 		$this->M_data->add_surattanah($data, 'surattanah');
 		echo "<script>
-                alert('Permintaan terkirim!');
+		alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
@@ -175,7 +239,7 @@ class dashbord extends CI_Controller
 		);
 		$this->M_data->add_domisili($data, 'domisili');
 		echo "<script>
-                alert('Permintaan terkirim!');
+		alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
@@ -201,7 +265,7 @@ class dashbord extends CI_Controller
 		);
 		$this->M_data->add_pengantarpindah($data, 'pengantarpindah');
 		echo "<script>
-                alert('Permintaan terkirim!');
+		alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
@@ -227,7 +291,7 @@ class dashbord extends CI_Controller
 		);
 		$this->M_data->add_pengantarnikah($data, 'pengantarnikah');
 		echo "<script>
-                alert('Permintaan terkirim!');
+		alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}
@@ -253,7 +317,7 @@ class dashbord extends CI_Controller
 		);
 		$this->M_data->add_pengantarcerai($data, 'pengantarcerai');
 		echo "<script>
-                alert('Permintaan terkirim!');
+		alert('Permintaan terkirim!, Silahkan Ambil 3 hari lagi');
                 </script>";
 		echo '<script>window.location="index";</script>';
 	}

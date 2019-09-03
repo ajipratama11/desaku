@@ -58,17 +58,17 @@
             <ul>
               <li class="menu-has-children"><a href="">Surat Rekom</a>
                 <ul>
-                  <li><a href="" data-toggle="modal" data-target="#modaldomisiliForm">Surat Domisili</a></li>  
-                  <li><a href="" data-toggle="modal" data-target="#modalpengantarpindahForm">Surat Pengantar Pindah</a></li>
-                  <li><a href="" data-toggle="modal" data-target="#modalpengantarnikahForm">Surat Pengantar Nikah</a></li>
-                  <li><a href="" data-toggle="modal" data-target="#modalpengantarceraiForm">Surat Pengantar Cerai</a></li>
+                  <li><a href="<?= base_url('dashbord/inputdomisili'); ?>">Surat Domisili</a></li>
+                  <li><a href="<?= base_url('dashbord/inputpengantarpindah'); ?>">Surat Pengantar Pindah</a></li>
+                  <li><a href="<?= base_url('dashbord/inputpengantarnikah'); ?>">Surat Pengantar Nikah</a></li>
+                  <li><a href="<?= base_url('dashbord/inputpengantarcerai'); ?>">Surat Pengantar Cerai</a></li>
                 </ul>
               </li>
-              <li><a href="" data-toggle="modal" data-target="#modalsktmForm">Pembuatan SKTM</a></li>
-              <li><a href="" data-toggle="modal" data-target="#modalktpForm">Pembuatan KTP</a></li>
-              <li><a href="" data-toggle="modal" data-target="#modalkkForm">Pembuatan KK</a></li>
-              <li><a href="" data-toggle="modal" data-target="#modalaktaForm">Pembuatan AKTA LAHIR</a></li>
-              <li><a href="" data-toggle="modal" data-target="#modalsurattanahForm">Pembuatan Surat Tanah</a></li>
+              <li><a href="<?= base_url('dashbord/inputsktm'); ?>">Pembuatan SKTM</a></li>
+              <li><a href="<?= base_url('dashbord/inputktp'); ?>">Pembuatan KTP</a></li>
+              <li><a href="<?= base_url('dashbord/inputkk'); ?>">Pembuatan KK</a></li>
+              <li><a href="<?= base_url('dashbord/inputakta'); ?>">Pembuatan AKTA LAHIR</a></li>
+              <li><a href="<?= base_url('dashbord/inputsurattanah'); ?>">Pembuatan Surat Tanah</a></li>
               <li><a href="#"></a></li>
             </ul>
           </li>
@@ -274,7 +274,7 @@
             <i class="fas fa-lock prefix grey-text"></i>
             <label data-error="wrong" data-success="right" for="defaultForm-pass">Keperluan</label>
             <input type="text" id="keperluan" name="keperluan" class="form-control validate">
-            
+
           </div>
         </div>
         <div class="modal-footer d-flex justify-content-center">
@@ -454,7 +454,7 @@
 
 
 
-  
+
   <!--==========================
     Intro Section
   ============================-->
