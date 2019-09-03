@@ -96,23 +96,23 @@ class Auth extends CI_Controller
                 'email' => htmlspecialchars($email),
                 'image' => 'default.jpg',
                 'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
-                'role_id' => 2,
-                'is_active' => 0,
+                'role_id' => ($this->input->post('role_id', true)),
+                'is_active' => 1,
                 'date_created' => time()
             ];
 
             // siapkan token
-            $token = base64_encode(random_bytes(32));
-            $user_token = [
-                'email' => $email,
-                'token' => $token,
-                'date_created' => time()
-            ];
+            // $token = base64_encode(random_bytes(32));
+            // $user_token = [
+            //     'email' => $email,
+            //     'token' => $token,
+            //     'date_created' => time()
+            // ];
 
             $this->db->insert('user', $data);
-            $this->db->insert('user_token', $user_token);
+            // $this->db->insert('user_token', $user_token);
 
-            $this->_sendEmail($token, 'verify');
+            // $this->_sendEmail($token, 'verify');
 
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Congratulation! your account has been created. Please activate your account</div>');
             redirect('auth');
@@ -155,42 +155,42 @@ class Auth extends CI_Controller
     }
 
 
-    public function verify()
-    {
-        $email = $this->input->get('email');
-        $token = $this->input->get('token');
+    // public function verify()
+    // {
+    //     $email = $this->input->get('email');
+    //     $token = $this->input->get('token');
 
-        $user = $this->db->get_where('user', ['email' => $email])->row_array();
+    //     $user = $this->db->get_where('user', ['email' => $email])->row_array();
 
-        if ($user) {
-            $user_token = $this->db->get_where('user_token', ['token' => $token])->row_array();
+    //     if ($user) {
+    //         $user_token = $this->db->get_where('user_token', ['token' => $token])->row_array();
 
-            if ($user_token) {
-                if (time() - $user_token['date_created'] < (60 * 60 * 24)) {
-                    $this->db->set('is_active', 1);
-                    $this->db->where('email', $email);
-                    $this->db->update('user');
+    //         if ($user_token) {
+    //             if (time() - $user_token['date_created'] < (60 * 60 * 24)) {
+    //                 $this->db->set('is_active', 1);
+    //                 $this->db->where('email', $email);
+    //                 $this->db->update('user');
 
-                    $this->db->delete('user_token', ['email' => $email]);
+    //                 $this->db->delete('user_token', ['email' => $email]);
 
-                    $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">' . $email . ' has been activated! Please login.</div>');
-                    redirect('auth');
-                } else {
-                    $this->db->delete('user', ['email' => $email]);
-                    $this->db->delete('user_token', ['email' => $email]);
+    //                 $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">' . $email . ' has been activated! Please login.</div>');
+    //                 redirect('auth');
+    //             } else {
+    //                 $this->db->delete('user', ['email' => $email]);
+    //                 $this->db->delete('user_token', ['email' => $email]);
 
-                    $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Account activation failed! Token expired.</div>');
-                    redirect('auth');
-                }
-            } else {
-                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Account activation failed! Wrong token.</div>');
-                redirect('auth');
-            }
-        } else {
-            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Account activation failed! Wrong email.</div>');
-            redirect('auth');
-        }
-    }
+    //                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Account activation failed! Token expired.</div>');
+    //                 redirect('auth');
+    //             }
+    //         } else {
+    //             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Account activation failed! Wrong token.</div>');
+    //             redirect('auth');
+    //         }
+    //     } else {
+    //         $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Account activation failed! Wrong email.</div>');
+    //         redirect('auth');
+    //     }
+    // }
 
 
     public function logout()
