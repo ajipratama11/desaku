@@ -69,6 +69,63 @@
     </style>
   <!-- Main Stylesheet File -->
   <link href="<?php echo base_url(''); ?>/vendor2/css/style.css" rel="stylesheet">
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script>
+        
+    var marker;
+      function initialize() {
+          
+        // Variabel untuk menyimpan informasi (desc)
+        var infoWindow = new google.maps.InfoWindow;
+        
+        //  Variabel untuk menyimpan peta Roadmap
+        var mapOptions = {
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        } 
+        
+        // Pembuatan petanya
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+              
+        // Variabel untuk menyimpan batas kordinat
+        var bounds = new google.maps.LatLngBounds();
+
+        // Pengambilan data dari database
+        <?php
+            $query['data'] = $this->db->get('tb_tempat')->row_array();
+            
+            {
+                $nama_tempat = $data['id_tempat'];
+                $lat = $data['lat'];
+                $lng = $data['lng'];
+                
+                echo ("addMarker($lat, $lng, '<b>$nama_tempat</b>');\n");                        
+            }
+          ?>
+      
+        // Proses membuat marker 
+        function addMarker(lat, lng, info) {
+            var lokasi = new google.maps.LatLng(lat, lng);
+            bounds.extend(lokasi);
+            var marker = new google.maps.Marker({
+                map: map,
+                position: lokasi
+            });       
+            map.fitBounds(bounds);
+            bindInfoWindow(marker, map, infoWindow, info);
+         }
+        
+        // Menampilkan informasi pada masing-masing marker yang diklik
+        function bindInfoWindow(marker, map, infoWindow, html) {
+          google.maps.event.addListener(marker, 'click', function() {
+            infoWindow.setContent(html);
+            infoWindow.open(map, marker);
+          });
+        }
+ 
+        }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    
+    </script>
 
   <!-- =======================================================
     Theme Name: Avilon
@@ -768,7 +825,7 @@
               <!-- <input type="text" id="pac-input" name="address" class="form-control"
 																		placeholder="masukkan lokasi">
 																		<input type="text" name="longlat" id="latlong" hidden="" > -->
-																		<div class="text" id="map"></div>
+                                    <div id="map-canvas" style="width: 700px; height: 600px;"></div>
               </ul>
               <!-- <a href="#" class="get-started-btn">Get Started</a> -->
             </div>
@@ -1057,7 +1114,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="<?php echo base_url(''); ?>/vendor2/js/main.js"></script>
-  <script>
+  <!-- <script>
 	function initAutocomplete() {
     var map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: -8.2230043, lng: 114.3653102},
@@ -1134,9 +1191,49 @@
     });
 	}
 
-	</script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkE6oJvsyX4sRAw0QTt3R_gJClY0NtIFQ&libraries=places&callback=initAutocomplete"
-		async defer></script>
+  </script>
+  <script>
+function tampilDekat(){
+    getCurLocation();
+    
+    map_dekat = new google.maps.Map(document.getElementById('map'), {
+        zoom: <?=get_option('default_zoom')?>,
+        center: {
+            lat : default_lat, 
+            lng : default_lng
+        }
+    });
+       
+    var data =  <?=json_encode($db->get_results("SELECT * FROM tb_tempat"))?>;
+    $.each(data, function(k, v){
+        var pos = {
+            lat : parseFloat(v.lat),
+            lng : parseFloat(v.lng)
+        };
+        // var contentString = '<h3>'  + v.nama_tempat + '</h3>' + 
+        //     '<p align="center"><a href="?m=tempat_detail&ID=' + v.id_tempat + '" class="link_detail btn btn-primary">Lihat Detail</a>';
+        // var infowindow = new google.maps.InfoWindow({
+        //     content: contentString
+        // });
+        var marker = new google.maps.Marker({
+            position: pos,
+            map: map_dekat,
+            animation: google.maps.Animation.DROP
+        });         
+        marker.addListener('click', function() {
+            infowindow.open(map_dekat, marker);
+        });
+    });    
+}  
+
+$(function(){
+    tampilDekat();
+})
+</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiDdGyp6n2hKHPECuB6JZIT-8dVHCpwI0&libraries=places&callback=initAutocomplete"
+    async defer></script> -->
+    
+    
 
 </body>
 
