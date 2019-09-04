@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Agu 2019 pada 17.42
+-- Waktu pembuatan: 04 Sep 2019 pada 03.35
 -- Versi server: 10.1.31-MariaDB
 -- Versi PHP: 7.2.3
 
@@ -52,48 +52,54 @@ INSERT INTO `akta` (`id_akta`, `nik`, `nama`, `alamat`, `tempatlahir`, `tgllahir
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `domisili`
+--
+
+CREATE TABLE `domisili` (
+  `nik` int(16) NOT NULL,
+  `nama` varchar(30) NOT NULL,
+  `ttl` varchar(128) NOT NULL,
+  `jenis_kelamin` varchar(20) NOT NULL,
+  `pekerjaan` varchar(20) NOT NULL,
+  `agama` varchar(20) NOT NULL,
+  `status_perkawinan` varchar(20) NOT NULL,
+  `kewarganegaraan` varchar(20) NOT NULL,
+  `alamat` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `domisili`
+--
+
+INSERT INTO `domisili` (`nik`, `nama`, `ttl`, `jenis_kelamin`, `pekerjaan`, `agama`, `status_perkawinan`, `kewarganegaraan`, `alamat`) VALUES
+(2147483647, 'Vania Larissa', '', 'p', 'Mahasiswi', 'Islam', 'p', 'Indonesia', 'Jl. Mastrip 12 Jembe'),
+(23133, 'adad', '', 'p', 'dD', 'Khatolik', 'l', 'S', 'XAS'),
+(23, 'adad', 'sas', 'l', 'ada', 'Islam', 'l', 'ada', 'dad');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `sktm`
 --
 
 CREATE TABLE `sktm` (
-  `NIK` int(16) NOT NULL,
-  `Nama` varchar(20) NOT NULL,
-  `TTL` varchar(20) NOT NULL,
-  `Jenis_Kel` varchar(20) NOT NULL,
-  `Agama` varchar(20) NOT NULL,
-  `Alamat` varchar(25) NOT NULL,
-  `Pekerjaan` varchar(20) NOT NULL,
-  `Keperluan` text NOT NULL
+  `nama` varchar(30) NOT NULL,
+  `ttl` varchar(30) NOT NULL,
+  `jenis_kelamin` varchar(30) DEFAULT NULL,
+  `nik` int(16) NOT NULL,
+  `agama` varchar(20) NOT NULL,
+  `pekerjaan` varchar(30) NOT NULL,
+  `alamat` varchar(30) NOT NULL,
+  `keperluan` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `sktm`
 --
 
-INSERT INTO `sktm` (`NIK`, `Nama`, `TTL`, `Jenis_Kel`, `Agama`, `Alamat`, `Pekerjaan`, `Keperluan`) VALUES
-(3247572, 'Vania Larissa Dina', 'Jember, 12 Mei 2018', 'Perempuan', 'Islam', 'jl. Mastrip', 'mahasiswi', 'mau kulian jauh'),
-(0, '', '', 'Perempuan', '', '', 'Taruni', ''),
-(0, '', '', '', '', '', '', ''),
-(0, '', '', '', '', '', '', '');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `surat_domisili`
---
-
-CREATE TABLE `surat_domisili` (
-  `NIK` int(16) NOT NULL,
-  `Nama` varchar(20) NOT NULL,
-  `Jenis_kelamin` varchar(20) NOT NULL,
-  `Tempatlahir` varchar(20) NOT NULL,
-  `Tgllahir` date NOT NULL,
-  `Agama` varchar(20) NOT NULL,
-  `Pekerjaan` varchar(20) NOT NULL,
-  `Alamat_lama` varchar(20) NOT NULL,
-  `Alamat_baru` varchar(20) NOT NULL,
-  `Keperluan` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+INSERT INTO `sktm` (`nama`, `ttl`, `jenis_kelamin`, `nik`, `agama`, `pekerjaan`, `alamat`, `keperluan`) VALUES
+('wa', 'Bondowoso, 14 Desember 1999', 'l', 315347586, 'Hindu', 'dv', 'rsth', 'Surat Rumah Sakit'),
+('yrth', 'ndxgfn32', 'l', 67311134, 'Konghuchu', 'tutut', 'Mahasiswi', 'Pembaruan Akta');
 
 -- --------------------------------------------------------
 
@@ -342,7 +348,7 @@ ALTER TABLE `user_sub_menu`
 -- AUTO_INCREMENT untuk tabel `user_token`
 --
 ALTER TABLE `user_token`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
